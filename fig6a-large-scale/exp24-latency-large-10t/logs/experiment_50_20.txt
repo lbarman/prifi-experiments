@@ -1,0 +1,751 @@
+Making logs R/W... [32m[ok][0m
+Deleting all remote logs... [32m[ok][0m
+Building simulation... [32m[ok][0m
+Simulation ID is [33mNyb4wKK7KeVq9mIjbQPPF53kK0gzxBft[0m, storing it in [33m~/remote/.simID[0m on remote... [32m[ok][0m
+Starting simulation [33mprifi_simul.toml[0m on [33mdeterlab[0m.
+[0;37;1mI : fd_darwin.go:42 (platform.init.0)        - File descriptor limit is: 24576
+[0m[0;33m1 : build.go:53 (simul.startBuild)           - Deploying to deterlab
+[0m[0;33m1 : deterlab.go:138 (platform.(*Deterlab).Build) - Building for lbarman users.deterlab.net SAFER  simulDir= /Users/barman/go/src/github.com/dedis/prifi/sda/simulation
+[0m[0;33m1 : deterlab.go:194 (platform.(*Deterlab).Build) - Build is finished after 2.268865033s
+[0m[0;33m1 : build.go:144 (simul.RunTests)                - Running test with config: map[cellsizedown:100 clientdataoutputenabled:false clientipregexpattern:"10\\.0\\.1\\.([0-9]+)" closewait:"10000000ms" dcnettype:"Simple" depth:1 disruptionprotectionenabled:false dolatencytests:true forceconsolecolor:true hosts:61 ntrustees:10 openclosedslotsmindelaybetweenrequests:0 overrideloglevel:1 payloadsize:100 pcapfolder:"pcap/" relaydataoutputenabled:false relayipregexpattern:"10\\.([0-9]+)\\.([0-9]+)\\.254" relaymaxnumberofconsecutivefailedrounds:5 relayprocessingloopsleeptime:0 relayreportinglimit:-1 relayroundtimeout:20000 relaytrusteecachehighbound:50000 relaytrusteecachelowbound:10000 relayusedummydatadown:false relayuseopenclosedslots:true relaywindowsize:5 replaypcap:false rounds:1 runwait:"10000000ms" schedulerstrategy:"Latency" servers:9 simulation:"PriFi" simuldelaybetweenclients:0 socksclientport:8090 socksserverport:8080 suite:"Ed25519" trusteealwaysslowdown:false trusteeipregexpattern:"10\\.1\\.0\\.([0-9]+)" trusteeneverslowdown:false trusteesleeptimebetweenmessages:10 useudp:true]
+[0m1 : users.go:50 (main.main)                  - Cleaning up 9 hosts.
+[0;33m1 : deterlab.go:305 (platform.(*Deterlab).Deploy) - Copying over to lbarman @ users.deterlab.net
+[0m1 : users.go:96 (main.main)                  - Missing host: pc189 - You should run
+1 : users.go:97 (main.main)                  - /usr/testbed/bin/node_reboot pc189
+[0;33m1 : deterlab.go:218 (platform.(*Deterlab).Cleanup.func1) - NOT-Normal error from cleanup cmd: exit status 1
+[0m1 : users.go:120 (main.main)                 - starting 9 cothorities for a total of 61 processes.
+1 : runsimul.go:144 (platform.Simulate)      - Started counting children with timeout of 1s
+1 : runsimul.go:151 (platform.Simulate)      - Found only 47 children, counting again
+1 : runsimul.go:144 (platform.Simulate)      - Started counting children with timeout of 2s
+1 : runsimul.go:148 (platform.Simulate)      - Found all 61 children
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #0 running on server tcp://10.0.1.254:2000 and will be a relay
+[0;33m1 : prifi.go:144 (main.(*SimulationService).Node) - Initiating this node (index  0 ) as relay
+[0m[0;37;1mI : service.go:133 (services.(*ServiceState).StartRelay) - Service tcp://10.0.1.254:2000 running in relay mode
+[0m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #14 running on server tcp://10.0.1.4:2000 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #60 running on server tcp://10.0.1.5:2018 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #16 running on server tcp://10.0.1.1:2002 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #15 running on server tcp://10.0.1.5:2000 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #17 running on server tcp://10.0.1.2:2002 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #41 running on server tcp://10.0.1.1:2012 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #18 running on server tcp://10.0.1.3:2002 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #20 running on server tcp://10.0.1.5:2002 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #30 running on server tcp://10.0.1.5:2006 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #19 running on server tcp://10.0.1.4:2002 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #43 running on server tcp://10.0.1.3:2012 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #44 running on server tcp://10.0.1.4:2012 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #42 running on server tcp://10.0.1.2:2012 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #28 running on server tcp://10.0.1.3:2006 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #24 running on server tcp://10.0.1.4:2004 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #11 running on server tcp://10.0.1.1:2000 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #13 running on server tcp://10.0.1.3:2000 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #12 running on server tcp://10.0.1.2:2000 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #22 running on server tcp://10.0.1.2:2004 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #50 running on server tcp://10.0.1.5:2014 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #40 running on server tcp://10.0.1.5:2010 and will be a client
+[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #57 running on server tcp://10.0.1.2:2018 and will be a client
+[0m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #56 running on server tcp://10.0.1.1:2018 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #29 running on server tcp://10.0.1.4:2006 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #23 running on server tcp://10.0.1.3:2004 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #39 running on server tcp://10.0.1.4:2010 and will be a client
+[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #34 running on server tcp://10.0.1.4:2008 and will be a client
+[0;33m[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #49 running on server tcp://10.0.1.4:2014 and will be a client
+[0m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #47 running on server tcp://10.0.1.2:2014 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #37 running on server tcp://10.0.1.2:2010 and will be a client
+[0m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #26 running on server tcp://10.0.1.1:2006 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #21 running on server tcp://10.0.1.1:2004 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #45 running on server tcp://10.0.1.5:2012 and will be a client
+[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #25 running on server tcp://10.0.1.5:2004 and will be a client
+[0m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #31 running on server tcp://10.0.1.1:2008 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #33 running on server tcp://10.0.1.3:2008 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #58 running on server tcp://10.0.1.3:2018 and will be a client
+[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #54 running on server tcp://10.0.1.4:2016 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #59 running on server tcp://10.0.1.4:2018 and will be a client
+[0m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #48 running on server tcp://10.0.1.3:2014 and will be a client
+[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #55 running on server tcp://10.0.1.5:2016 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #27 running on server tcp://10.0.1.2:2006 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #52 running on server tcp://10.0.1.2:2016 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #38 running on server tcp://10.0.1.3:2010 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #51 running on server tcp://10.0.1.1:2016 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #35 running on server tcp://10.0.1.5:2008 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #53 running on server tcp://10.0.1.3:2016 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #46 running on server tcp://10.0.1.1:2014 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #36 running on server tcp://10.0.1.1:2010 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #32 running on server tcp://10.0.1.2:2008 and will be a client
+[0m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #4 running on server tcp://10.1.0.1:2002 and will be a trustee
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #1 running on server tcp://10.1.0.1:2000 and will be a trustee
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #5 running on server tcp://10.1.0.2:2002 and will be a trustee
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #6 running on server tcp://10.1.0.3:2002 and will be a trustee
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #9 running on server tcp://10.1.0.3:2004 and will be a trustee
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #7 running on server tcp://10.1.0.1:2004 and will be a trustee
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #2 running on server tcp://10.1.0.2:2000 and will be a trustee
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #3 running on server tcp://10.1.0.3:2000 and will be a trustee
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #8 running on server tcp://10.1.0.2:2004 and will be a trustee
+[0;33m1 : prifi.go:147 (main.(*SimulationService).Node) - Initiating this node (index  9 ) as trustee
+[0m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #10 running on server tcp://10.1.0.1:2006 and will be a trustee
+[0;33m1 : prifi.go:147 (main.(*SimulationService).Node) - Initiating this node (index  6 ) as trustee
+[0m[0;33m1 : prifi.go:147 (main.(*SimulationService).Node) - Initiating this node (index  5 ) as trustee
+[0m[0;33m1 : prifi.go:147 (main.(*SimulationService).Node) - Initiating this node (index  3 ) as trustee
+[0m[0;33m1 : prifi.go:147 (main.(*SimulationService).Node) - Initiating this node (index  2 ) as trustee
+[0m[0;33m1 : prifi.go:147 (main.(*SimulationService).Node) - Initiating this node (index  4 ) as trustee
+[0m[0;33m1 : prifi.go:147 (main.(*SimulationService).Node) - Initiating this node (index  8 ) as trustee
+[0m[0;33m1 : prifi.go:147 (main.(*SimulationService).Node) - Initiating this node (index  7 ) as trustee
+[0m[0;33m1 : prifi.go:147 (main.(*SimulationService).Node) - Initiating this node (index  10 ) as trustee
+[0m[0;33m1 : prifi.go:147 (main.(*SimulationService).Node) - Initiating this node (index  1 ) as trustee
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.2:2002 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.4:2002 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.4:2004 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.4:2012 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.4:2000 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.5:2018 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.2:2012 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.4:2010 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.2:2018 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.5:2004 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.2:2014 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.2:2010 running in client mode
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 1 clients and 0 trustees), waiting...
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.1:2018 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.5:2002 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.1:2004 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.3:2018 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.1:2006 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.5:2014 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.5:2012 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.1:2012 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.3:2004 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.1:2008 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.1:2002 running in client mode
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 2 clients and 0 trustees), waiting...
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.1:2000 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.3:2006 running in client mode
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 3 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 4 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 5 clients and 0 trustees), waiting...
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.5:2006 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.4:2006 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.4:2008 running in client mode
+[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 6 clients and 0 trustees), waiting...
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.5:2016 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.3:2002 running in client mode
+[0m[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.4:2014 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.5:2010 running in client mode
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 7 clients and 0 trustees), waiting...
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.5:2000 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.3:2014 running in client mode
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 8 clients and 0 trustees), waiting...
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.1:2016 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.1:2010 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.3:2010 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.4:2016 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.2:2000 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.3:2008 running in client mode
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 9 clients and 0 trustees), waiting...
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.5:2008 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.2:2004 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.3:2000 running in client mode
+[0m[0;37;1m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.3:2012 running in client mode
+[0mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.4:2018 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.3:2016 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.1:2014 running in client mode
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 10 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 11 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 12 clients and 0 trustees), waiting...
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.2:2008 running in client mode
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 13 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 14 clients and 0 trustees), waiting...
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.2:2006 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.2:2016 running in client mode
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 15 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 16 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 17 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 18 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 19 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 20 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 21 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 22 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 23 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 24 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 25 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 26 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 27 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 28 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 29 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 30 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 31 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 32 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 33 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 34 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 35 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 36 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 37 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 38 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 39 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 40 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 41 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 42 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 43 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 44 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 45 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 46 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 47 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 48 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 49 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 50 clients and 0 trustees), waiting...
+[0m[0;37;1mI : service.go:246 (services.(*ServiceState).StartTrustee) - Service tcp://10.1.0.3:2004 running in trustee mode
+[0m[0;37;1mI : service.go:246 (services.(*ServiceState).StartTrustee) - Service tcp://10.1.0.3:2002 running in trustee mode
+[0m[0;37;1mI : service.go:246 (services.(*ServiceState).StartTrustee) - Service tcp://10.1.0.3:2000 running in trustee mode
+[0m[0;37;1mI : service.go:246 (services.(*ServiceState).StartTrustee) - Service tcp://10.1.0.2:2002 running in trustee mode
+[0m[0;37;1mI : service.go:246 (services.(*ServiceState).StartTrustee) - Service tcp://10.1.0.2:2000 running in trustee mode
+[0m[0;37;1mI : service.go:246 (services.(*ServiceState).StartTrustee) - Service tcp://10.1.0.1:2002 running in trustee mode
+[0m[0;37;1mI : service.go:246 (services.(*ServiceState).StartTrustee) - Service tcp://10.1.0.2:2004 running in trustee mode
+[0m[0;37;1mI : service.go:246 (services.(*ServiceState).StartTrustee) - Service tcp://10.1.0.1:2004 running in trustee mode
+[0m[0;37;1mI : service.go:246 (services.(*ServiceState).StartTrustee) - Service tcp://10.1.0.1:2006 running in trustee mode
+[0m[0;37;1mI : service.go:246 (services.(*ServiceState).StartTrustee) - Service tcp://10.1.0.1:2000 running in trustee mode
+[0m[0;33m1 : churn.go:309 (services.(*churnHandler).tryStartProtocol) - Enough participants ( 50 clients and 1 trustees), but no handler to start.
+[0m[0;33m1 : churn.go:309 (services.(*churnHandler).tryStartProtocol) - Enough participants ( 50 clients and 2 trustees), but no handler to start.
+[0m[0;33m1 : churn.go:309 (services.(*churnHandler).tryStartProtocol) - Enough participants ( 50 clients and 3 trustees), but no handler to start.
+[0m[0;33m1 : churn.go:309 (services.(*churnHandler).tryStartProtocol) - Enough participants ( 50 clients and 4 trustees), but no handler to start.
+[0m[0;33m1 : churn.go:309 (services.(*churnHandler).tryStartProtocol) - Enough participants ( 50 clients and 5 trustees), but no handler to start.
+[0m[0;33m1 : churn.go:309 (services.(*churnHandler).tryStartProtocol) - Enough participants ( 50 clients and 6 trustees), but no handler to start.
+[0m[0;33m1 : churn.go:309 (services.(*churnHandler).tryStartProtocol) - Enough participants ( 50 clients and 7 trustees), but no handler to start.
+[0m[0;33m1 : churn.go:309 (services.(*churnHandler).tryStartProtocol) - Enough participants ( 50 clients and 8 trustees), but no handler to start.
+[0m[0;33m1 : runsimul.go:169 (platform.Simulate)                      - Starting new node PriFi
+[0m[0;33m1 : churn.go:309 (services.(*churnHandler).tryStartProtocol) - Enough participants ( 50 clients and 9 trustees), but no handler to start.
+[0m[0;33m1 : churn.go:309 (services.(*churnHandler).tryStartProtocol) - Enough participants ( 50 clients and 10 trustees), but no handler to start.
+[0m[0;37;1mI : prifi.go:185 (main.(*SimulationService).Run)             - Sleeping 15 seconds before starting the experiment...
+[0m[0;37;1mI : prifi.go:188 (main.(*SimulationService).Run)             - Starting experiment Nyb4wKK7KeVq9mIjbQPPF53kK0gzxBft
+
+[0m[0;33m1 : prifi.go:146 (services.(*ServiceState).StartPriFiCommunicateProtocol) - Starting PriFi protocol
+[0m[0;37;1mI : prifi.go:153 (services.(*ServiceState).StartPriFiCommunicateProtocol) - Outputting CPU profile in /tmp/prifi-525309049
+[0m[0;33m1 : prifi.go:221 (main.(*SimulationService).Run)                          - Giving the experiment 3600 seconds to finish before aborting...
+[0m[0;33m1 : relay.go:170 (relay.(*PriFiLibRelayInstance).Received_ALL_ALL_PARAMETERS) - Relay has been initialized by message; StartNow is true
+[0m[0;33m1 : relay.go:177 (relay.(*PriFiLibRelayInstance).Received_ALL_ALL_PARAMETERS) - Relay setup done, and setup sent to the trustees.
+[0m[0;33m1 : timing.go:67 (utils.StopMeasureAndLogWithInfo)                            - [StopMeasureAndLog] measured time for resync-boot : 15 ms, info: 50
+[0m[0;33m1 : timing.go:67 (utils.StopMeasureAndLogWithInfo)                            - [StopMeasureAndLog] measured time for resync-shuffle-collect-client-pk : 657 ms, info: 50
+[0m[0;33m1 : timing.go:67 (utils.StopMeasureAndLogWithInfo)                            - [StopMeasureAndLog] measured time for resync-shuffle-trustee-1step : 2751 ms, info: 50
+[0m[0;33m1 : timing.go:67 (utils.StopMeasureAndLogWithInfo)                            - [StopMeasureAndLog] measured time for resync-shuffle-trustee-2step : 629 ms, info: 50
+[0m[0;33m1 : timing.go:67 (utils.StopMeasureAndLogWithInfo)                            - [StopMeasureAndLog] measured time for resync-shuffle : 4038 ms, info: 50
+[0m[0;33m1 : timing.go:67 (utils.StopMeasureAndLogWithInfo)                            - [StopMeasureAndLog] measured time for resync : 4054 ms, info: 50
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [0] 0.2 round/sec, 0.0 kB/s up, 0.0 kB/s down, 0.0 kB/s down(udp), 0.0 kB/s down(re-udp), 1 cells, 100 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [0] Schedules 0->1;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [0] 52 ms +- 0 (over 1, happened 1). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [0] 25.5 ms +- 35.34 (over 2, happened 2). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [0] 0 ms +- 0 (over 2, happened 2). Info: waiting-on-trustees, extrainfo: Round 1 ->T0:222 (0),  T1:222 (0),  T2:209 (0),  T3:126 (0),  T4:75 (0,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99),  T5:75 (0,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99),  T6:75 (0,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99),  T7:75 (0,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99),  T8:75 (0,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99),  T9:75 (0,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [0] 0 ms +- 0 (over 5, happened 5). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [0] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [1] 13.0 round/sec, 1.3 kB/s up, 0.0 kB/s down, 0.0 kB/s down(udp), 0.0 kB/s down(re-udp), 66 cells, 6600 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [1] Schedules 0->13;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [1] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [1] 549.87 ms +- 61.38 (over 30, happened 78). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [1] 118.03 ms +- 27.2 (over 30, happened 79). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [1] 0 ms +- 0 (over 30, happened 79). Info: waiting-on-trustees, extrainfo: Round 78 ->T0:3371 (0),  T1:3356 (0),  T2:3279 (0),  T3:3272 (0),  T4:3257 (0),  T5:3283 (0),  T6:3225 (0),  T7:3261 (0),  T8:3220 (0),  T9:3171 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [1] 0 ms +- 0 (over 30, happened 82). Info: sending-data
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [2] 3.0 round/sec, 0.3 kB/s up, 0.0 kB/s down, 0.0 kB/s down(udp), 0.0 kB/s down(re-udp), 81 cells, 8100 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [2] Schedules 0->17;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [2] 1083.23 ms +- 116.73 (over 30, happened 97). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [2] 231.6 ms +- 55.64 (over 30, happened 98). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [2] 0 ms +- 0 (over 30, happened 98). Info: waiting-on-trustees, extrainfo: Round 97 ->T0:7233 (0),  T1:7138 (0),  T2:7075 (0),  T3:7054 (0),  T4:6966 (0),  T5:6998 (0),  T6:6905 (0),  T7:6996 (0),  T8:6938 (0),  T9:6841 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [2] 0 ms +- 0 (over 30, happened 101). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [2] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [3] 2.0 round/sec, 0.2 kB/s up, 0.0 kB/s down, 0.0 kB/s down(udp), 0.0 kB/s down(re-udp), 91 cells, 9100 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [3] Schedules 0->18;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [3] 1601.9 ms +- 175.04 (over 30, happened 108). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [3] 347.43 ms +- 82.29 (over 30, happened 109). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [3] 0 ms +- 0 (over 30, happened 109). Info: waiting-on-trustees, extrainfo: Round 108 ->T0:11071 (0),  T1:10953 (0),  T2:10831 (0),  T3:10945 (0),  T4:10826 (0),  T5:10837 (0),  T6:10768 (0),  T7:10824 (0),  T8:10751 (0),  T9:10717 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [3] 0 ms +- 0 (over 30, happened 112). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [3] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [4] 1.2 round/sec, 0.1 kB/s up, 0.0 kB/s down, 0.0 kB/s down(udp), 0.0 kB/s down(re-udp), 97 cells, 9700 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [4] Schedules 0->20;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [4] 468.27 ms +- 120.09 (over 30, happened 117). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [4] 0 ms +- 0 (over 30, happened 117). Info: waiting-on-trustees, extrainfo: Round 116 ->T0:15005 (0),  T1:14914 (0),  T2:14668 (0),  T3:14947 (0),  T4:14797 (0),  T5:14756 (0),  T6:14708 (0),  T7:14848 (0),  T8:14704 (0),  T9:14702 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [4] 0 ms +- 0 (over 30, happened 120). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [4] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [4] 2147.43 ms +- 244.17 (over 30, happened 116). Info: round-duration
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [5] 1.2 round/sec, 0.1 kB/s up, 0.0 kB/s down, 0.0 kB/s down(udp), 0.0 kB/s down(re-udp), 103 cells, 10300 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [5] Schedules 0->21;  Info: 
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [5] 0 ms +- 0 (over 30, happened 124). Info: waiting-on-trustees, extrainfo: Round 123 ->T0:19516 (0),  T1:19461 (0),  T2:19243 (0),  T3:19498 (0),  T4:19488 (0),  T5:19353 (0),  T6:19271 (0),  T7:19400 (0),  T8:19141 (0),  T9:19203 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [5] 0 ms +- 0 (over 30, happened 127). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [5] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [5] 2790.57 ms +- 327.39 (over 30, happened 123). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [5] 607.17 ms +- 149.46 (over 30, happened 124). Info: waiting-on-clients
+[0m[0;32;1m[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [6] 0.8 round/sec, 0.1 kB/s up, 0.0 kB/s down, 0.0 kB/s down(udp), 0.0 kB/s down(re-udp), 107 cells, 10700 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [6] Schedules 0->22;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [6] 3369.97 ms +- 395.45 (over 30, happened 128). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [6] 731.17 ms +- 178.28 (over 30, happened 129). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [6] 0 ms +- 0 (over 30, happened 129). Info: waiting-on-trustees, extrainfo: Round 128 ->T0:23668 (0),  T1:23559 (0),  T2:23337 (0),  T3:23550 (0),  T4:23636 (0),  T5:23455 (0),  T6:23364 (0),  T7:23497 (0),  T8:23245 (0),  T9:23334 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [6] 0 ms +- 0 (over 30, happened 132). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [6] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;32;1m[0m[0;32;1m[0m[0;32;1m[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [7] 0.8 round/sec, 0.1 kB/s up, 0.0 kB/s down, 0.0 kB/s down(udp), 0.0 kB/s down(re-udp), 111 cells, 11100 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [7] Schedules 0->22; 1->1;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [7] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [7] 4065.13 ms +- 473.03 (over 30, happened 133). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [7] 882.83 ms +- 211.21 (over 30, happened 134). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [7] 0 ms +- 0 (over 30, happened 134). Info: waiting-on-trustees, extrainfo: Round 133 ->T0:28534 (0),  T1:28415 (0),  T2:28251 (0),  T3:28487 (0),  T4:28553 (0),  T5:28360 (0),  T6:28300 (0),  T7:28379 (0),  T8:28161 (0),  T9:28332 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [7] 0 ms +- 0 (over 30, happened 137). Info: sending-data
+[0m[0;32;1m[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [0] 12259 ms +- 0 (over 1, happened 1). Info: latency-msg-stayed-in-buffer
+[0m[0;32;1m[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [8] 0.8 round/sec, 0.1 kB/s up, 0.0 kB/s down, 0.0 kB/s down(udp), 0.0 kB/s down(re-udp), 115 cells, 11500 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [8] Schedules 0->22; 1->1;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [8] 4724.5 ms +- 543.32 (over 30, happened 137). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [8] 1019.53 ms +- 237.43 (over 30, happened 138). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [8] 0 ms +- 0 (over 30, happened 138). Info: waiting-on-trustees, extrainfo: Round 137 ->T0:33060 (0),  T1:32906 (0),  T2:32578 (0),  T3:32992 (0),  T4:32937 (0),  T5:32693 (0),  T6:32627 (0),  T7:32839 (0),  T8:32525 (0),  T9:32716 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [8] 0 ms +- 0 (over 30, happened 141). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [8] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [0] 20339 ms +- 0 (over 1, happened 1). Info: measured-latency
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [1] 4299.11 ms +- 2679.38 (over 9, happened 9). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [9] 0.6 round/sec, 0.1 kB/s up, 0.0 kB/s down, 0.0 kB/s down(udp), 0.0 kB/s down(re-udp), 118 cells, 11800 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [9] Schedules 0->22; 1->2;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [9] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [9] 5480.7 ms +- 619.67 (over 30, happened 141). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [9] 1189.63 ms +- 277.8 (over 30, happened 142). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [9] 0 ms +- 0 (over 30, happened 142). Info: waiting-on-trustees, extrainfo: Round 141 ->T0:38893 (0),  T1:38672 (0),  T2:38183 (0),  T3:38806 (0),  T4:38557 (0),  T5:38426 (0),  T6:38410 (0),  T7:38549 (0),  T8:38175 (0),  T9:38357 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [9] 0 ms +- 0 (over 30, happened 145). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [1] 13720.43 ms +- 2802.83 (over 7, happened 7). Info: measured-latency
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [2] 3517.45 ms +- 2401.26 (over 11, happened 11). Info: latency-msg-stayed-in-buffer
+[0m[0;32;1m[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [10] 0.8 round/sec, 0.1 kB/s up, 0.0 kB/s down, 0.0 kB/s down(udp), 0.0 kB/s down(re-udp), 122 cells, 12200 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [10] Schedules 0->22; 1->2;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [10] 0 ms +- 0 (over 30, happened 149). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [10] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [10] 6322.2 ms +- 692.84 (over 30, happened 145). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [10] 1333.7 ms +- 272.3 (over 30, happened 146). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [10] 0 ms +- 0 (over 30, happened 146). Info: waiting-on-trustees, extrainfo: Round 145 ->T0:43646 (0),  T1:43359 (0),  T2:43009 (0),  T3:43523 (0),  T4:43239 (0),  T5:43164 (0),  T6:43218 (0),  T7:43436 (0),  T8:43020 (0),  T9:43123 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [2] 12417.3 ms +- 2321.33 (over 10, happened 10). Info: measured-latency
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [3] 2937 ms +- 1993.88 (over 14, happened 14). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [11] 0.2 round/sec, 0.0 kB/s up, 0.0 kB/s down, 0.0 kB/s down(udp), 0.0 kB/s down(re-udp), 123 cells, 12300 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [11] Schedules 0->22; 1->3;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [11] 1455.13 ms +- 312.93 (over 30, happened 148). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [11] 0 ms +- 0 (over 30, happened 148). Info: waiting-on-trustees, extrainfo: Round 147 ->T0:47908 (0),  T1:47609 (0),  T2:47276 (0),  T3:47977 (0),  T4:47621 (0),  T5:47439 (0),  T6:47561 (0),  T7:47666 (0),  T8:47451 (0),  T9:47434 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [11] 0 ms +- 0 (over 30, happened 151). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [4] 2569.88 ms +- 1808.4 (over 16, happened 16). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [11] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [11] 6776.03 ms +- 735.6 (over 30, happened 147). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [3] 12321.25 ms +- 1970.13 (over 12, happened 12). Info: measured-latency
+[0m[0;33m1 : trustee.go:132 (trustee.(*PriFiLibTrusteeInstance).Send_TRU_REL_DC_CIPHER) - Trustee 0 : rate changed from 1 to HALVED
+[0m[0;33m1 : trustee.go:132 (trustee.(*PriFiLibTrusteeInstance).Send_TRU_REL_DC_CIPHER) - Trustee 3 : rate changed from 1 to HALVED
+[0m[0;33m1 : trustee.go:132 (trustee.(*PriFiLibTrusteeInstance).Send_TRU_REL_DC_CIPHER) - Trustee 1 : rate changed from 1 to HALVED
+[0m[0;33m1 : trustee.go:132 (trustee.(*PriFiLibTrusteeInstance).Send_TRU_REL_DC_CIPHER) - Trustee 4 : rate changed from 1 to HALVED
+[0m[0;33m1 : trustee.go:132 (trustee.(*PriFiLibTrusteeInstance).Send_TRU_REL_DC_CIPHER) - Trustee 6 : rate changed from 1 to HALVED
+[0m[0;33m1 : trustee.go:132 (trustee.(*PriFiLibTrusteeInstance).Send_TRU_REL_DC_CIPHER) - Trustee 8 : rate changed from 1 to HALVED
+[0m[0;33m1 : trustee.go:132 (trustee.(*PriFiLibTrusteeInstance).Send_TRU_REL_DC_CIPHER) - Trustee 5 : rate changed from 1 to HALVED
+[0m[0;33m1 : trustee.go:132 (trustee.(*PriFiLibTrusteeInstance).Send_TRU_REL_DC_CIPHER) - Trustee 9 : rate changed from 1 to HALVED
+[0m[0;33m1 : trustee.go:132 (trustee.(*PriFiLibTrusteeInstance).Send_TRU_REL_DC_CIPHER) - Trustee 7 : rate changed from 1 to HALVED
+[0m[0;33m1 : trustee.go:132 (trustee.(*PriFiLibTrusteeInstance).Send_TRU_REL_DC_CIPHER) - Trustee 2 : rate changed from 1 to HALVED
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [12] 0.6 round/sec, 0.1 kB/s up, 0.0 kB/s down, 0.0 kB/s down(udp), 0.0 kB/s down(re-udp), 126 cells, 12600 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [12] Schedules 0->22; 1->3;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [12] 0 ms +- 0 (over 30, happened 154). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [12] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [12] 7497.1 ms +- 782.58 (over 30, happened 150). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [12] 1576.67 ms +- 308.16 (over 30, happened 151). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [5] 2284.33 ms +- 1650.2 (over 18, happened 18). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [12] 0 ms +- 0 (over 30, happened 151). Info: waiting-on-trustees, extrainfo: Round 150 ->T0:52234 (0),  T1:51908 (0),  T2:51578 (0),  T3:52355 (0),  T4:51792 (0),  T5:51640 (0),  T6:51818 (0),  T7:51902 (0),  T8:51743 (0),  T9:51659 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [4] 12064.13 ms +- 1598.1 (over 15, happened 15). Info: measured-latency
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [13] 0.6 round/sec, 0.1 kB/s up, 0.0 kB/s down, 0.1 kB/s down(udp), 0.0 kB/s down(re-udp), 129 cells, 12900 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [13] Schedules 0->22; 1->3;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [13] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [13] 8082.5 ms +- 745.03 (over 30, happened 153). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [13] 1679.73 ms +- 322.73 (over 30, happened 154). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [13] 0 ms +- 0 (over 30, happened 154). Info: waiting-on-trustees, extrainfo: Round 153 ->T0:59896 (0),  T1:60120 (0),  T2:57782 (0),  T3:59278 (0),  T4:59040 (0),  T5:58388 (0),  T6:59509 (0),  T7:57977 (0),  T8:57910 (0),  T9:58211 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [13] 0 ms +- 0 (over 30, happened 157). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [6] 2055.9 ms +- 1515.24 (over 20, happened 20). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [5] 11677.78 ms +- 1393.82 (over 18, happened 18). Info: measured-latency
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [14] 38.8 round/sec, 3.8 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 323 cells, 32300 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [14] Schedules 0->59; 1->5;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [14] 33.07 ms +- 1.2 (over 30, happened 386). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [14] 5.9 ms +- 0.94 (over 30, happened 387). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [14] 0 ms +- 0 (over 30, happened 387). Info: waiting-on-trustees, extrainfo: Round 386 ->T0:63328 (0),  T1:63481 (0),  T2:60825 (0),  T3:62683 (0),  T4:63558 (0),  T5:62765 (0),  T6:63147 (0),  T7:60627 (0),  T8:60645 (0),  T9:61718 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [14] 0 ms +- 0 (over 30, happened 390). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [14] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [7] 1832 ms +- 1340.11 (over 23, happened 23). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [6] 8858.04 ms +- 2093.2 (over 25, happened 25). Info: measured-latency
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [15] 118.2 round/sec, 11.5 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 914 cells, 91400 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [15] Schedules 0->172; 1->9;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [15] 0 ms +- 0 (over 30, happened 1098). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [15] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [15] 48.13 ms +- 7.57 (over 30, happened 1094). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [15] 8.9 ms +- 2.24 (over 30, happened 1095). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [15] 0 ms +- 0 (over 30, happened 1095). Info: waiting-on-trustees, extrainfo: Round 1094 ->T0:62620 (0),  T1:62773 (0),  T2:60117 (0),  T3:61975 (0),  T4:62850 (0),  T5:62057 (0),  T6:62439 (0),  T7:59919 (0),  T8:59937 (0),  T9:61010 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [8] 1570.63 ms +- 1165.79 (over 27, happened 27). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [7] 7649.59 ms +- 2113.11 (over 29, happened 29). Info: measured-latency
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [16] 115.6 round/sec, 11.3 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 1492 cells, 149200 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [16] Schedules 0->284; 1->12;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [16] 49.7 ms +- 6.43 (over 30, happened 1787). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [16] 9 ms +- 1.92 (over 30, happened 1788). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [16] 0 ms +- 0 (over 30, happened 1788). Info: waiting-on-trustees, extrainfo: Round 1787 ->T0:61927 (0),  T1:62080 (0),  T2:59424 (0),  T3:61282 (0),  T4:62157 (0),  T5:61364 (0),  T6:61746 (0),  T7:59226 (0),  T8:59244 (0),  T9:60317 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [16] 0 ms +- 0 (over 30, happened 1791). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [16] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [9] 1011.07 ms +- 782.82 (over 30, happened 31). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [17] 116.0 round/sec, 11.3 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 2072 cells, 207200 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [17] Schedules 0->397; 1->15;  Info: 
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [17] 0 ms +- 0 (over 30, happened 2484). Info: waiting-on-trustees, extrainfo: Round 2483 ->T0:61231 (0),  T1:61384 (0),  T2:58728 (0),  T3:60586 (0),  T4:61461 (0),  T5:60668 (0),  T6:61050 (0),  T7:58530 (0),  T8:58548 (0),  T9:59621 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [17] 0 ms +- 0 (over 30, happened 2487). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [17] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [17] 52.3 ms +- 6.68 (over 30, happened 2483). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [17] 9.53 ms +- 1.87 (over 30, happened 2484). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [8] 5668.43 ms +- 1835.75 (over 30, happened 33). Info: measured-latency
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [10] 232.43 ms +- 240.26 (over 30, happened 35). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [18] 116.2 round/sec, 11.3 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 2653 cells, 265300 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [18] Schedules 0->508; 1->19;  Info: 
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [18] 0 ms +- 0 (over 30, happened 3180). Info: waiting-on-trustees, extrainfo: Round 3179 ->T0:60535 (0),  T1:60688 (0),  T2:58032 (0),  T3:59890 (0),  T4:60765 (0),  T5:59972 (0),  T6:60354 (0),  T7:57834 (0),  T8:57852 (0),  T9:58925 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [18] 0 ms +- 0 (over 30, happened 3183). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [18] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [18] 38.43 ms +- 1.97 (over 30, happened 3179). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [18] 6.47 ms +- 0.7 (over 30, happened 3180). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [9] 4214.73 ms +- 1757.54 (over 30, happened 37). Info: measured-latency
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [11] 142.47 ms +- 162.89 (over 30, happened 39). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [19] 116.0 round/sec, 11.3 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 3233 cells, 323300 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [19] Schedules 0->620; 1->22;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [19] 0 ms +- 0 (over 30, happened 3878). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [19] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [19] 35.07 ms +- 0.77 (over 30, happened 3874). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [19] 6.13 ms +- 0.45 (over 30, happened 3875). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [19] 0 ms +- 0 (over 30, happened 3875). Info: waiting-on-trustees, extrainfo: Round 3874 ->T0:59840 (0),  T1:59993 (0),  T2:57337 (0),  T3:59195 (0),  T4:60070 (0),  T5:59277 (0),  T6:59659 (0),  T7:57139 (0),  T8:57157 (0),  T9:58230 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [10] 2944 ms +- 1634.69 (over 30, happened 41). Info: measured-latency
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [12] 69.4 ms +- 58.79 (over 30, happened 43). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [20] 116.6 round/sec, 11.4 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 3816 cells, 381600 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [20] Schedules 0->732; 1->26;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [20] 34 ms +- 1.12 (over 30, happened 4573). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [20] 6.07 ms +- 0.56 (over 30, happened 4574). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [20] 0 ms +- 0 (over 30, happened 4574). Info: waiting-on-trustees, extrainfo: Round 4573 ->T0:59141 (0),  T1:59294 (0),  T2:56638 (0),  T3:58496 (0),  T4:59371 (0),  T5:58578 (0),  T6:58960 (0),  T7:56440 (0),  T8:56458 (0),  T9:57531 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [20] 0 ms +- 0 (over 30, happened 4577). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [20] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [11] 1407.7 ms +- 1097.97 (over 30, happened 45). Info: measured-latency
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [21] 116.6 round/sec, 11.4 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 4399 cells, 439900 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [21] Schedules 0->844; 1->30;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [21] 34.77 ms +- 0.92 (over 30, happened 5272). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [21] 6 ms +- 0.65 (over 30, happened 5273). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [21] 0 ms +- 0 (over 30, happened 5273). Info: waiting-on-trustees, extrainfo: Round 5272 ->T0:58442 (0),  T1:58595 (0),  T2:55939 (0),  T3:57797 (0),  T4:58672 (0),  T5:57879 (0),  T6:58261 (0),  T7:55741 (0),  T8:55759 (0),  T9:56832 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [21] 0 ms +- 0 (over 30, happened 5276). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [21] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [13] 77.57 ms +- 57.93 (over 30, happened 48). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [12] 117.3 ms +- 57.55 (over 30, happened 50). Info: measured-latency
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [22] 116.2 round/sec, 11.3 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 4980 cells, 498000 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [22] Schedules 0->957; 1->33;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [22] 34.87 ms +- 0.83 (over 30, happened 5969). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [22] 6.17 ms +- 0.52 (over 30, happened 5970). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [22] 0 ms +- 0 (over 30, happened 5970). Info: waiting-on-trustees, extrainfo: Round 5969 ->T0:57745 (0),  T1:57898 (0),  T2:55242 (0),  T3:57100 (0),  T4:57975 (0),  T5:57182 (0),  T6:57564 (0),  T7:55044 (0),  T8:55062 (0),  T9:56135 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [22] 0 ms +- 0 (over 30, happened 5973). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [22] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [14] 51.13 ms +- 4.83 (over 30, happened 51). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [13] 87.6 ms +- 5.56 (over 30, happened 54). Info: measured-latency
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [23] 116.2 round/sec, 11.3 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 5561 cells, 556100 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [23] Schedules 0->1068; 1->37;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [23] 0 ms +- 0 (over 30, happened 6669). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [23] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [23] 33.67 ms +- 0.81 (over 30, happened 6665). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [23] 5.87 ms +- 0.44 (over 30, happened 6666). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [23] 0 ms +- 0 (over 30, happened 6666). Info: waiting-on-trustees, extrainfo: Round 6665 ->T0:57049 (0),  T1:57202 (0),  T2:54546 (0),  T3:56404 (0),  T4:57279 (0),  T5:56486 (0),  T6:56868 (0),  T7:54348 (0),  T8:54366 (0),  T9:55439 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [15] 50.7 ms +- 4.7 (over 30, happened 55). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [14] 85.33 ms +- 5.29 (over 30, happened 57). Info: measured-latency
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [24] 116.0 round/sec, 11.3 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 6141 cells, 614100 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [24] Schedules 0->1181; 1->40;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [24] 32.87 ms +- 1.09 (over 30, happened 7361). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [24] 5.8 ms +- 0.7 (over 30, happened 7362). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [24] 0 ms +- 0 (over 30, happened 7362). Info: waiting-on-trustees, extrainfo: Round 7361 ->T0:56353 (0),  T1:56506 (0),  T2:53850 (0),  T3:55708 (0),  T4:56583 (0),  T5:55790 (0),  T6:56172 (0),  T7:53652 (0),  T8:53670 (0),  T9:54743 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [24] 0 ms +- 0 (over 30, happened 7365). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [24] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [16] 49.4 ms +- 4.39 (over 30, happened 58). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [25] 115.6 round/sec, 11.3 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 6719 cells, 671900 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [25] Schedules 0->1292; 1->43;  Info: 
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [25] 0 ms +- 0 (over 30, happened 8054). Info: waiting-on-trustees, extrainfo: Round 8053 ->T0:55661 (0),  T1:55814 (0),  T2:53158 (0),  T3:55016 (0),  T4:55891 (0),  T5:55098 (0),  T6:55480 (0),  T7:52960 (0),  T8:52978 (0),  T9:54051 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [25] 0 ms +- 0 (over 30, happened 8057). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [25] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [25] 35.33 ms +- 1.08 (over 30, happened 8053). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [25] 6.17 ms +- 0.46 (over 30, happened 8054). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [15] 86.57 ms +- 5.44 (over 30, happened 61). Info: measured-latency
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [17] 51.57 ms +- 4.61 (over 30, happened 62). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [26] 116.2 round/sec, 11.3 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 7300 cells, 730000 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [26] Schedules 0->1404; 1->47;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [26] 5.8 ms +- 0.3 (over 30, happened 8751). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [26] 0 ms +- 0 (over 30, happened 8751). Info: waiting-on-trustees, extrainfo: Round 8750 ->T0:54964 (0),  T1:55117 (0),  T2:52461 (0),  T3:54319 (0),  T4:55194 (0),  T5:54401 (0),  T6:54783 (0),  T7:52263 (0),  T8:52281 (0),  T9:53354 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [26] 0 ms +- 0 (over 30, happened 8754). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [26] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [26] 33.5 ms +- 0.68 (over 30, happened 8750). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [16] 87.77 ms +- 5.29 (over 30, happened 65). Info: measured-latency
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [18] 50.8 ms +- 4.5 (over 30, happened 66). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [27] 116.2 round/sec, 11.3 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 7881 cells, 788100 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [27] Schedules 0->1517; 1->50;  Info: 
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [27] 0 ms +- 0 (over 30, happened 9448). Info: waiting-on-trustees, extrainfo: Round 9447 ->T0:54267 (0),  T1:54420 (0),  T2:51764 (0),  T3:53622 (0),  T4:54497 (0),  T5:53704 (0),  T6:54086 (0),  T7:51566 (0),  T8:51584 (0),  T9:52657 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [27] 0 ms +- 0 (over 30, happened 9451). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [27] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [27] 35 ms +- 0.88 (over 30, happened 9447). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [27] 6.13 ms +- 0.35 (over 30, happened 9448). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [17] 88.9 ms +- 5.11 (over 30, happened 69). Info: measured-latency
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [19] 52.63 ms +- 4.42 (over 30, happened 70). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [28] 117.2 round/sec, 11.4 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 8467 cells, 846700 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [28] Schedules 0->1630; 1->53;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [28] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [28] 33.67 ms +- 0.76 (over 30, happened 10149). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [28] 6.03 ms +- 0.47 (over 30, happened 10150). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [28] 0 ms +- 0 (over 30, happened 10150). Info: waiting-on-trustees, extrainfo: Round 10149 ->T0:53565 (0),  T1:53718 (0),  T2:51062 (0),  T3:52920 (0),  T4:53795 (0),  T5:53002 (0),  T6:53384 (0),  T7:50864 (0),  T8:50882 (0),  T9:51955 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [28] 0 ms +- 0 (over 30, happened 10153). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [18] 87.53 ms +- 4.57 (over 30, happened 73). Info: measured-latency
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [20] 51.5 ms +- 4.55 (over 30, happened 74). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [29] 114.2 round/sec, 11.2 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 9038 cells, 903800 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [29] Schedules 0->1740; 1->57;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [29] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [29] 45 ms +- 6.92 (over 30, happened 10834). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [29] 8.5 ms +- 1.72 (over 30, happened 10835). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [29] 0 ms +- 0 (over 30, happened 10835). Info: waiting-on-trustees, extrainfo: Round 10834 ->T0:52880 (0),  T1:53033 (0),  T2:50377 (0),  T3:52235 (0),  T4:53110 (0),  T5:52317 (0),  T6:52699 (0),  T7:50179 (0),  T8:50197 (0),  T9:51270 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [29] 0 ms +- 0 (over 30, happened 10838). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [19] 86.67 ms +- 5.28 (over 30, happened 77). Info: measured-latency
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [30] 115.6 round/sec, 11.3 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 9616 cells, 961600 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [30] Schedules 0->1851; 1->60;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [30] 0 ms +- 0 (over 30, happened 11530). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [30] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [30] 34.67 ms +- 1.01 (over 30, happened 11526). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [30] 5.97 ms +- 0.66 (over 30, happened 11527). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [30] 0 ms +- 0 (over 30, happened 11527). Info: waiting-on-trustees, extrainfo: Round 11526 ->T0:52188 (0),  T1:52341 (0),  T2:49685 (0),  T3:51543 (0),  T4:52418 (0),  T5:51625 (0),  T6:52007 (0),  T7:49487 (0),  T8:49505 (0),  T9:50578 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [21] 50.3 ms +- 4.99 (over 30, happened 78). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [20] 88.63 ms +- 7.16 (over 30, happened 80). Info: measured-latency
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [31] 115.6 round/sec, 11.3 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 10194 cells, 1019400 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [31] Schedules 0->1964; 1->63;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [31] 33.47 ms +- 0.8 (over 30, happened 12220). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [31] 5.9 ms +- 0.56 (over 30, happened 12221). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [31] 0 ms +- 0 (over 30, happened 12221). Info: waiting-on-trustees, extrainfo: Round 12220 ->T0:51494 (0),  T1:51647 (0),  T2:48991 (0),  T3:50849 (0),  T4:51724 (0),  T5:50931 (0),  T6:51313 (0),  T7:48793 (0),  T8:48811 (0),  T9:49884 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [31] 0 ms +- 0 (over 30, happened 12224). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [31] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [22] 53.1 ms +- 6.87 (over 30, happened 81). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [21] 90.63 ms +- 7.71 (over 30, happened 84). Info: measured-latency
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [32] 115.8 round/sec, 11.3 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 10773 cells, 1077300 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [32] Schedules 0->2075; 1->67;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [32] 6.03 ms +- 0.79 (over 30, happened 12915). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [32] 0 ms +- 0 (over 30, happened 12915). Info: waiting-on-trustees, extrainfo: Round 12914 ->T0:50800 (0),  T1:50953 (0),  T2:48297 (0),  T3:50155 (0),  T4:51030 (0),  T5:50237 (0),  T6:50619 (0),  T7:48099 (0),  T8:48117 (0),  T9:49190 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [32] 0 ms +- 0 (over 30, happened 12918). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [32] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [32] 34.57 ms +- 1.23 (over 30, happened 12914). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [23] 54.97 ms +- 6.77 (over 30, happened 86). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [22] 91.43 ms +- 7.56 (over 30, happened 88). Info: measured-latency
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [33] 117.0 round/sec, 11.4 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 11358 cells, 1135800 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [33] Schedules 0->2187; 1->71;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [33] 0 ms +- 0 (over 30, happened 13619). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [33] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [33] 34.17 ms +- 0.84 (over 30, happened 13615). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [33] 6.07 ms +- 0.58 (over 30, happened 13616). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [33] 0 ms +- 0 (over 30, happened 13616). Info: waiting-on-trustees, extrainfo: Round 13615 ->T0:50099 (0),  T1:50252 (0),  T2:47596 (0),  T3:49454 (0),  T4:50329 (0),  T5:49536 (0),  T6:49918 (0),  T7:47398 (0),  T8:47416 (0),  T9:48489 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [24] 53.67 ms +- 6.75 (over 30, happened 90). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [34] 115.8 round/sec, 11.3 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 11937 cells, 1193700 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [34] Schedules 0->2299; 1->74;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [34] 34.97 ms +- 1.63 (over 30, happened 14309). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [34] 6.17 ms +- 1.14 (over 30, happened 14310). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [34] 0 ms +- 0 (over 30, happened 14310). Info: waiting-on-trustees, extrainfo: Round 14309 ->T0:49405 (0),  T1:49558 (0),  T2:46902 (0),  T3:48760 (0),  T4:49635 (0),  T5:48842 (0),  T6:49224 (0),  T7:46704 (0),  T8:46722 (0),  T9:47795 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [34] 0 ms +- 0 (over 30, happened 14313). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [34] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [23] 91.03 ms +- 7.76 (over 30, happened 92). Info: measured-latency
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [25] 55.03 ms +- 6.81 (over 30, happened 94). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [35] 113.6 round/sec, 11.1 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 12505 cells, 1250500 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [35] Schedules 0->2409; 1->77;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [35] 34.03 ms +- 0.56 (over 30, happened 14990). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [35] 5.93 ms +- 0.55 (over 30, happened 14991). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [35] 0 ms +- 0 (over 30, happened 14991). Info: waiting-on-trustees, extrainfo: Round 14990 ->T0:48724 (0),  T1:48877 (0),  T2:46221 (0),  T3:48079 (0),  T4:48954 (0),  T5:48161 (0),  T6:48543 (0),  T7:46023 (0),  T8:46041 (0),  T9:47114 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [35] 0.03 ms +- 0.06 (over 30, happened 14994). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [35] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [24] 92.47 ms +- 7.7 (over 30, happened 96). Info: measured-latency
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [26] 56.07 ms +- 6.65 (over 30, happened 98). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [36] 116.8 round/sec, 11.4 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 13089 cells, 1308900 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [36] Schedules 0->2521; 1->81;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [36] 32.87 ms +- 1.15 (over 30, happened 15690). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [36] 5.73 ms +- 0.88 (over 30, happened 15691). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [36] 0 ms +- 0 (over 30, happened 15691). Info: waiting-on-trustees, extrainfo: Round 15690 ->T0:48024 (0),  T1:48177 (0),  T2:45521 (0),  T3:47379 (0),  T4:48254 (0),  T5:47461 (0),  T6:47843 (0),  T7:45323 (0),  T8:45341 (0),  T9:46414 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [36] 0 ms +- 0 (over 30, happened 15694). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [36] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [25] 93.83 ms +- 7.64 (over 30, happened 100). Info: measured-latency
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [37] 115.6 round/sec, 11.3 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 13667 cells, 1366700 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [37] Schedules 0->2633; 1->84;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [37] 33.57 ms +- 1.17 (over 30, happened 16383). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [37] 6.1 ms +- 0.75 (over 30, happened 16384). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [37] 0 ms +- 0 (over 30, happened 16384). Info: waiting-on-trustees, extrainfo: Round 16383 ->T0:47331 (0),  T1:47484 (0),  T2:44828 (0),  T3:46686 (0),  T4:47561 (0),  T5:46768 (0),  T6:47150 (0),  T7:44630 (0),  T8:44648 (0),  T9:45721 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [37] 0 ms +- 0 (over 30, happened 16387). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [37] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [27] 56.37 ms +- 6.52 (over 30, happened 102). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : timeouts.go:79 (relay.(*PriFiLibRelayInstance).timeoutRetransmitPk)       - Timeout fired
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [26] 94.5 ms +- 7.29 (over 30, happened 104). Info: measured-latency
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [38] 116.2 round/sec, 11.3 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 14248 cells, 1424800 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [38] Schedules 0->2745; 1->88;  Info: 
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [38] 0 ms +- 0 (over 30, happened 17081). Info: waiting-on-trustees, extrainfo: Round 17080 ->T0:46634 (0),  T1:46787 (0),  T2:44131 (0),  T3:45989 (0),  T4:46864 (0),  T5:46071 (0),  T6:46453 (0),  T7:43933 (0),  T8:43951 (0),  T9:45024 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [38] 0 ms +- 0 (over 30, happened 17084). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [38] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [38] 34.4 ms +- 0.79 (over 30, happened 17080). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [38] 6.03 ms +- 0.47 (over 30, happened 17081). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [28] 57.77 ms +- 5.87 (over 30, happened 106). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [27] 95.17 ms +- 6.87 (over 30, happened 108). Info: measured-latency
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [39] 113.8 round/sec, 11.1 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 14817 cells, 1481700 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [39] Schedules 0->2855; 1->91;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [39] 34.2 ms +- 1.05 (over 30, happened 17762). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [39] 5.97 ms +- 0.77 (over 30, happened 17763). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [39] 0 ms +- 0 (over 30, happened 17763). Info: waiting-on-trustees, extrainfo: Round 17762 ->T0:45952 (0),  T1:46105 (0),  T2:43449 (0),  T3:45307 (0),  T4:46182 (0),  T5:45389 (0),  T6:45771 (0),  T7:43251 (0),  T8:43269 (0),  T9:44342 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [39] 0 ms +- 0 (over 30, happened 17766). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [39] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [29] 55.37 ms +- 3.53 (over 30, happened 110). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [40] 115.6 round/sec, 11.3 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 15395 cells, 1539500 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [40] Schedules 0->2966; 1->94;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [40] 0 ms +- 0 (over 30, happened 18458). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [40] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [40] 34.53 ms +- 1.05 (over 30, happened 18454). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [40] 5.73 ms +- 0.74 (over 30, happened 18455). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [40] 0 ms +- 0 (over 30, happened 18455). Info: waiting-on-trustees, extrainfo: Round 18454 ->T0:45260 (0),  T1:45413 (0),  T2:42757 (0),  T3:44615 (0),  T4:45490 (0),  T5:44697 (0),  T6:45079 (0),  T7:42559 (0),  T8:42577 (0),  T9:43650 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [28] 92.23 ms +- 4.93 (over 30, happened 112). Info: measured-latency
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [30] 54.17 ms +- 3.85 (over 30, happened 114). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [41] 116.6 round/sec, 11.4 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 15978 cells, 1597800 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [41] Schedules 0->3078; 1->98;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [41] 35.4 ms +- 0.82 (over 30, happened 19153). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [41] 6.13 ms +- 0.35 (over 30, happened 19154). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [41] 0 ms +- 0 (over 30, happened 19154). Info: waiting-on-trustees, extrainfo: Round 19153 ->T0:44561 (0),  T1:44714 (0),  T2:42058 (0),  T3:43916 (0),  T4:44791 (0),  T5:43998 (0),  T6:44380 (0),  T7:41860 (0),  T8:41878 (0),  T9:42951 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [41] 0 ms +- 0 (over 30, happened 19157). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [41] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [29] 90.8 ms +- 3.99 (over 30, happened 116). Info: measured-latency
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [42] 113.8 round/sec, 11.1 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 16547 cells, 1654700 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [42] Schedules 0->3188; 1->101;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [42] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [42] 48.53 ms +- 4.49 (over 30, happened 19835). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [42] 8.87 ms +- 1.16 (over 30, happened 19836). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [42] 0 ms +- 0 (over 30, happened 19836). Info: waiting-on-trustees, extrainfo: Round 19835 ->T0:43879 (0),  T1:44032 (0),  T2:41376 (0),  T3:43234 (0),  T4:44109 (0),  T5:43316 (0),  T6:43698 (0),  T7:41178 (0),  T8:41196 (0),  T9:42269 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [42] 0 ms +- 0 (over 30, happened 19839). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [31] 54.33 ms +- 4.31 (over 30, happened 119). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [30] 91.67 ms +- 4.42 (over 30, happened 120). Info: measured-latency
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [43] 115.6 round/sec, 11.3 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 17125 cells, 1712500 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [43] Schedules 0->3300; 1->104;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [43] 34.6 ms +- 1.11 (over 30, happened 20528). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [43] 5.93 ms +- 0.56 (over 30, happened 20529). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [43] 0 ms +- 0 (over 30, happened 20529). Info: waiting-on-trustees, extrainfo: Round 20528 ->T0:43186 (0),  T1:43339 (0),  T2:40683 (0),  T3:42541 (0),  T4:43416 (0),  T5:42623 (0),  T6:43005 (0),  T7:40485 (0),  T8:40503 (0),  T9:41576 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [43] 0 ms +- 0 (over 30, happened 20532). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [43] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [32] 57.97 ms +- 7.52 (over 30, happened 122). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [31] 94.23 ms +- 8.36 (over 30, happened 124). Info: measured-latency
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [44] 115.8 round/sec, 11.3 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 17704 cells, 1770400 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [44] Schedules 0->3412; 1->108;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [44] 34.17 ms +- 0.67 (over 30, happened 21223). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [44] 6.03 ms +- 0.31 (over 30, happened 21224). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [44] 0 ms +- 0 (over 30, happened 21224). Info: waiting-on-trustees, extrainfo: Round 21223 ->T0:42491 (0),  T1:42644 (0),  T2:39988 (0),  T3:41846 (0),  T4:42721 (0),  T5:41928 (0),  T6:42310 (0),  T7:39790 (0),  T8:39808 (0),  T9:40881 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [44] 0 ms +- 0 (over 30, happened 21227). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [44] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [33] 56.27 ms +- 7.53 (over 30, happened 127). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [32] 93.57 ms +- 8.38 (over 30, happened 128). Info: measured-latency
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [45] 114.2 round/sec, 11.2 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 18275 cells, 1827500 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [45] Schedules 0->3522; 1->111;  Info: 
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [45] 0 ms +- 0 (over 30, happened 21908). Info: waiting-on-trustees, extrainfo: Round 21907 ->T0:41807 (0),  T1:41960 (0),  T2:39304 (0),  T3:41162 (0),  T4:42037 (0),  T5:41244 (0),  T6:41626 (0),  T7:39106 (0),  T8:39124 (0),  T9:40197 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [45] 0 ms +- 0 (over 30, happened 21911). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [45] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [45] 38.27 ms +- 1.34 (over 30, happened 21907). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [45] 6.8 ms +- 0.8 (over 30, happened 21908). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [34] 54.93 ms +- 7.56 (over 30, happened 131). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [33] 92.43 ms +- 8.31 (over 30, happened 132). Info: measured-latency
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [46] 115.4 round/sec, 11.3 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 18852 cells, 1885200 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [46] Schedules 0->3633; 1->115;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [46] 35.1 ms +- 1.94 (over 30, happened 22599). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [46] 5.9 ms +- 0.82 (over 30, happened 22600). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [46] 0 ms +- 0 (over 30, happened 22600). Info: waiting-on-trustees, extrainfo: Round 22599 ->T0:41115 (0),  T1:41268 (0),  T2:38612 (0),  T3:40470 (0),  T4:41345 (0),  T5:40552 (0),  T6:40934 (0),  T7:38414 (0),  T8:38432 (0),  T9:39505 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [46] 0 ms +- 0 (over 30, happened 22603). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [46] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [35] 55.7 ms +- 7.51 (over 30, happened 135). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [47] 117.4 round/sec, 11.5 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 19439 cells, 1943900 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [47] Schedules 0->3747; 1->118;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [47] 0 ms +- 0 (over 30, happened 23307). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [47] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [47] 34.07 ms +- 0.96 (over 30, happened 23303). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [47] 5.8 ms +- 0.78 (over 30, happened 23304). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [47] 0 ms +- 0 (over 30, happened 23304). Info: waiting-on-trustees, extrainfo: Round 23303 ->T0:40411 (0),  T1:40564 (0),  T2:37908 (0),  T3:39766 (0),  T4:40641 (0),  T5:39848 (0),  T6:40230 (0),  T7:37710 (0),  T8:37728 (0),  T9:38801 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [34] 93.6 ms +- 8.32 (over 30, happened 136). Info: measured-latency
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [48] 114.6 round/sec, 11.2 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 20012 cells, 2001200 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [48] Schedules 0->3857; 1->121;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [48] 34.77 ms +- 0.89 (over 30, happened 23989). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [48] 6.17 ms +- 0.58 (over 30, happened 23990). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [48] 0 ms +- 0 (over 30, happened 23990). Info: waiting-on-trustees, extrainfo: Round 23989 ->T0:39725 (0),  T1:39878 (0),  T2:37222 (0),  T3:39080 (0),  T4:39955 (0),  T5:39162 (0),  T6:39544 (0),  T7:37024 (0),  T8:37042 (0),  T9:38115 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [48] 0 ms +- 0 (over 30, happened 23993). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [48] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [36] 57.43 ms +- 7.55 (over 30, happened 139). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [35] 94.5 ms +- 8.43 (over 30, happened 139). Info: measured-latency
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [49] 116.8 round/sec, 11.4 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 20596 cells, 2059600 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [49] Schedules 0->3971; 1->124;  Info: 
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [49] 0 ms +- 0 (over 30, happened 24691). Info: waiting-on-trustees, extrainfo: Round 24690 ->T0:39024 (0),  T1:39177 (0),  T2:36521 (0),  T3:38379 (0),  T4:39254 (0),  T5:38461 (0),  T6:38843 (0),  T7:36323 (0),  T8:36341 (0),  T9:37414 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [49] 0 ms +- 0 (over 30, happened 24694). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [49] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [49] 33.83 ms +- 0.93 (over 30, happened 24690). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [49] 5.87 ms +- 0.54 (over 30, happened 24691). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [37] 57.07 ms +- 7.55 (over 30, happened 143). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [36] 94.17 ms +- 8.48 (over 30, happened 143). Info: measured-latency
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [50] 115.2 round/sec, 11.2 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 21172 cells, 2117200 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [50] Schedules 0->4082; 1->127;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [50] 33.47 ms +- 0.3 (over 30, happened 25380). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [50] 5.7 ms +- 0.35 (over 30, happened 25381). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [50] 0 ms +- 0 (over 30, happened 25381). Info: waiting-on-trustees, extrainfo: Round 25380 ->T0:38334 (0),  T1:38487 (0),  T2:35831 (0),  T3:37689 (0),  T4:38564 (0),  T5:37771 (0),  T6:38153 (0),  T7:35633 (0),  T8:35651 (0),  T9:36724 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [50] 0 ms +- 0 (over 30, happened 25384). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [50] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [38] 55.63 ms +- 7.6 (over 30, happened 146). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [37] 92.63 ms +- 8.66 (over 30, happened 146). Info: measured-latency
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [51] 116.0 round/sec, 11.3 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 21752 cells, 2175200 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [51] Schedules 0->4193; 1->131;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [51] 35.93 ms +- 1.2 (over 30, happened 26075). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [51] 6.2 ms +- 0.65 (over 30, happened 26076). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [51] 0 ms +- 0 (over 30, happened 26076). Info: waiting-on-trustees, extrainfo: Round 26075 ->T0:37639 (0),  T1:37792 (0),  T2:35136 (0),  T3:36994 (0),  T4:37869 (0),  T5:37076 (0),  T6:37458 (0),  T7:34938 (0),  T8:34956 (0),  T9:36029 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [51] 0 ms +- 0 (over 30, happened 26079). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [51] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [39] 55.9 ms +- 7.48 (over 30, happened 150). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [38] 92.67 ms +- 8.44 (over 30, happened 150). Info: measured-latency
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [52] 114.2 round/sec, 11.2 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 22323 cells, 2232300 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [52] Schedules 0->4304; 1->134;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [52] 5.9 ms +- 0.52 (over 30, happened 26761). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [52] 0 ms +- 0 (over 30, happened 26761). Info: waiting-on-trustees, extrainfo: Round 26760 ->T0:36954 (0),  T1:37107 (0),  T2:34451 (0),  T3:36309 (0),  T4:37184 (0),  T5:36391 (0),  T6:36773 (0),  T7:34253 (0),  T8:34271 (0),  T9:35344 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [52] 0 ms +- 0 (over 30, happened 26764). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [52] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [52] 33.93 ms +- 0.83 (over 30, happened 26760). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [40] 52 ms +- 4.08 (over 30, happened 154). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [39] 88.27 ms +- 4.49 (over 30, happened 154). Info: measured-latency
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [53] 116.0 round/sec, 11.3 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 22903 cells, 2290300 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [53] Schedules 0->4415; 1->138;  Info: 
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [53] 0 ms +- 0 (over 30, happened 27456). Info: waiting-on-trustees, extrainfo: Round 27455 ->T0:36259 (0),  T1:36412 (0),  T2:33756 (0),  T3:35614 (0),  T4:36489 (0),  T5:35696 (0),  T6:36078 (0),  T7:33558 (0),  T8:33576 (0),  T9:34649 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [53] 0 ms +- 0 (over 30, happened 27459). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [53] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [53] 33.8 ms +- 0.78 (over 30, happened 27455). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [53] 5.87 ms +- 0.42 (over 30, happened 27456). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [41] 52.8 ms +- 4.52 (over 30, happened 158). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [40] 89.1 ms +- 4.68 (over 30, happened 158). Info: measured-latency
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [54] 115.8 round/sec, 11.3 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 23482 cells, 2348200 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [54] Schedules 0->4528; 1->141;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [54] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [54] 34.07 ms +- 1.02 (over 30, happened 28150). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [54] 5.93 ms +- 0.37 (over 30, happened 28151). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [54] 0 ms +- 0 (over 30, happened 28151). Info: waiting-on-trustees, extrainfo: Round 28150 ->T0:35564 (0),  T1:35717 (0),  T2:33061 (0),  T3:34919 (0),  T4:35794 (0),  T5:35001 (0),  T6:35383 (0),  T7:32863 (0),  T8:32881 (0),  T9:33954 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [54] 0 ms +- 0 (over 30, happened 28154). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [42] 52.53 ms +- 4.85 (over 30, happened 162). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [41] 88.63 ms +- 5.05 (over 30, happened 162). Info: measured-latency
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [55] 117.2 round/sec, 11.4 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 24068 cells, 2406800 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [55] Schedules 0->4640; 1->145;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [55] 34.67 ms +- 1.09 (over 30, happened 28852). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [55] 6.4 ms +- 0.94 (over 30, happened 28853). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [55] 0 ms +- 0 (over 30, happened 28853). Info: waiting-on-trustees, extrainfo: Round 28852 ->T0:34862 (0),  T1:35015 (0),  T2:32359 (0),  T3:34217 (0),  T4:35092 (0),  T5:34299 (0),  T6:34681 (0),  T7:32161 (0),  T8:32179 (0),  T9:33252 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [55] 0 ms +- 0 (over 30, happened 28856). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [55] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [56] 114.4 round/sec, 11.2 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 24640 cells, 2464000 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [56] Schedules 0->4751; 1->148;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [56] 0 ms +- 0 (over 30, happened 29542). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [56] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [56] 34.3 ms +- 0.85 (over 30, happened 29538). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [56] 5.97 ms +- 0.61 (over 30, happened 29539). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [56] 0 ms +- 0 (over 30, happened 29539). Info: waiting-on-trustees, extrainfo: Round 29538 ->T0:34176 (0),  T1:34329 (0),  T2:31673 (0),  T3:33531 (0),  T4:34406 (0),  T5:33613 (0),  T6:33995 (0),  T7:31475 (0),  T8:31493 (0),  T9:32566 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [43] 52.63 ms +- 4.94 (over 30, happened 166). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [42] 88.13 ms +- 5.16 (over 30, happened 166). Info: measured-latency
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [57] 115.4 round/sec, 11.3 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 25217 cells, 2521700 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [57] Schedules 0->4862; 1->151;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [57] 43.7 ms +- 4.83 (over 30, happened 30229). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [57] 7.97 ms +- 1.28 (over 30, happened 30230). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [57] 0 ms +- 0 (over 30, happened 30230). Info: waiting-on-trustees, extrainfo: Round 30229 ->T0:33485 (0),  T1:33638 (0),  T2:30982 (0),  T3:32840 (0),  T4:33715 (0),  T5:32922 (0),  T6:33304 (0),  T7:30784 (0),  T8:30802 (0),  T9:31875 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [57] 0 ms +- 0 (over 30, happened 30233). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [57] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [44] 51.77 ms +- 4.71 (over 30, happened 170). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [43] 86.47 ms +- 4.68 (over 30, happened 170). Info: measured-latency
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [58] 116.4 round/sec, 11.4 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 25799 cells, 2579900 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [58] Schedules 0->4974; 1->155;  Info: 
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [58] 33.33 ms +- 0.99 (over 30, happened 30927). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [58] 6.07 ms +- 0.73 (over 30, happened 30928). Info: waiting-on-clients
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [58] 0 ms +- 0 (over 30, happened 30928). Info: waiting-on-trustees, extrainfo: Round 30927 ->T0:32787 (0),  T1:32940 (0),  T2:30284 (0),  T3:32142 (0),  T4:33017 (0),  T5:32224 (0),  T6:32606 (0),  T7:30086 (0),  T8:30104 (0),  T9:31177 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [58] 0 ms +- 0 (over 30, happened 30931). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [58] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [45] 51.73 ms +- 4.73 (over 30, happened 174). Info: latency-msg-stayed-in-buffer
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)           - [44] 85.87 ms +- 4.78 (over 30, happened 174). Info: measured-latency
+[0m[0;33m1 : bw_statistics.go:107 (log.(*BitrateStatistics).ReportWithInfo)            - [59] 115.6 round/sec, 11.3 kB/s up, 0.0 kB/s down, 0.2 kB/s down(udp), 0.0 kB/s down(re-udp), 26377 cells, 2637700 total
+[0m[0;33m1 : schedules_statistics.go:70 (log.(*SchedulesStatistics).ReportWithInfo)    - [59] Schedules 0->5086; 1->158;  Info: 
+[0m[0;33m1 : time_statistics.go:112 (log.(*TimeStatistics).ReportWithExtraInfo)        - [59] 0 ms +- 0 (over 30, happened 31621). Info: waiting-on-trustees, extrainfo: Round 31620 ->T0:32094 (0),  T1:32247 (0),  T2:29591 (0),  T3:31449 (0),  T4:32324 (0),  T5:31531 (0),  T6:31913 (0),  T7:29393 (0),  T8:29411 (0),  T9:30484 (0)
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [59] 0 ms +- 0 (over 30, happened 31624). Info: sending-data
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [59] -1 ms +- -1 (over -1, happened 0). Info: pcap-delay
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [59] 34.03 ms +- 0.92 (over 30, happened 31620). Info: round-duration
+[0m[0;33m1 : time_statistics.go:87 (log.(*TimeStatistics).ReportWithInfo)              - [59] 6.1 ms +- 0.91 (over 30, happened 31621). Info: waiting-on-clients
+[0m

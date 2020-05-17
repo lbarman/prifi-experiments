@@ -1,0 +1,835 @@
+Making logs R/W... [32m[ok][0m
+Deleting all remote logs... [32m[ok][0m
+Building simulation... [32m[ok][0m
+Simulation ID is [33modo1AcayJLh9DkrfByM8L9kVJiiFR8ZU[0m, storing it in [33m~/remote/.simID[0m on remote... [32m[ok][0m
+Starting simulation [33mprifi_simul.toml[0m on [33mdeterlab[0m.
+[0;37;1mI : fd_darwin.go:42 (platform.init.0)        - File descriptor limit is: 24576
+[0m[0;33m1 : build.go:53 (simul.startBuild)           - Deploying to deterlab
+[0m[0;33m1 : deterlab.go:138 (platform.(*Deterlab).Build) - Building for lbarman users.deterlab.net SAFER  simulDir= /Users/barman/go/src/github.com/dedis/prifi/sda/simulation
+[0m[0;33m1 : deterlab.go:194 (platform.(*Deterlab).Build) - Build is finished after 2.279599795s
+[0m[0;33m1 : build.go:144 (simul.RunTests)                - Running test with config: map[cellsizedown:100 clientdataoutputenabled:false clientipregexpattern:"10\\.0\\.1\\.([0-9]+)" closewait:"10000000ms" dcnettype:"Simple" depth:1 disruptionprotectionenabled:false dolatencytests:true forceconsolecolor:true hosts:64 ntrustees:3 openclosedslotsmindelaybetweenrequests:0 overrideloglevel:1 payloadsize:100 pcapfolder:"pcap/" relaydataoutputenabled:false relayipregexpattern:"10\\.([0-9]+)\\.([0-9]+)\\.254" relaymaxnumberofconsecutivefailedrounds:5 relayprocessingloopsleeptime:0 relayreportinglimit:-1 relayroundtimeout:20000 relaytrusteecachehighbound:50000 relaytrusteecachelowbound:10000 relayusedummydatadown:false relayuseopenclosedslots:true relaywindowsize:5 replaypcap:false rounds:1 runwait:"10000000ms" schedulerstrategy:"Latency" servers:9 simulation:"PriFi" simuldelaybetweenclients:0 socksclientport:8090 socksserverport:8080 suite:"Ed25519" trusteealwaysslowdown:false trusteeipregexpattern:"10\\.1\\.0\\.([0-9]+)" trusteeneverslowdown:false trusteesleeptimebetweenmessages:10 useudp:true]
+[0m1 : users.go:50 (main.main)                  - Cleaning up 9 hosts.
+[0;33m1 : deterlab.go:305 (platform.(*Deterlab).Deploy) - Copying over to lbarman @ users.deterlab.net
+[0m1 : users.go:120 (main.main)                 - starting 9 cothorities for a total of 64 processes.
+1 : runsimul.go:144 (platform.Simulate)      - Started counting children with timeout of 1s
+1 : runsimul.go:151 (platform.Simulate)      - Found only 59 children, counting again
+1 : runsimul.go:144 (platform.Simulate)      - Started counting children with timeout of 2s
+1 : runsimul.go:148 (platform.Simulate)      - Found all 64 children
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #0 running on server tcp://10.0.1.254:2000 and will be a relay
+[0;33m1 : prifi.go:144 (main.(*SimulationService).Node) - Initiating this node (index  0 ) as relay
+[0m[0;37;1mI : service.go:133 (services.(*ServiceState).StartRelay) - Service tcp://10.0.1.254:2000 running in relay mode
+[0m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #23 running on server tcp://10.0.1.5:2006 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #11 running on server tcp://10.0.1.3:2002 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #17 running on server tcp://10.0.1.4:2004 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #19 running on server tcp://10.0.1.1:2006 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #24 running on server tcp://10.0.1.1:2008 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #27 running on server tcp://10.0.1.4:2008 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #26 running on server tcp://10.0.1.3:2008 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #15 running on server tcp://10.0.1.2:2004 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #28 running on server tcp://10.0.1.5:2008 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #18 running on server tcp://10.0.1.5:2004 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #12 running on server tcp://10.0.1.4:2002 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #29 running on server tcp://10.0.1.1:2010 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #16 running on server tcp://10.0.1.3:2004 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #20 running on server tcp://10.0.1.2:2006 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #25 running on server tcp://10.0.1.2:2008 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #42 running on server tcp://10.0.1.4:2014 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #10 running on server tcp://10.0.1.2:2002 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #52 running on server tcp://10.0.1.4:2018 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #63 running on server tcp://10.0.1.5:2022 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #30 running on server tcp://10.0.1.2:2010 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #50 running on server tcp://10.0.1.2:2018 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #41 running on server tcp://10.0.1.3:2014 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #37 running on server tcp://10.0.1.4:2012 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #47 running on server tcp://10.0.1.4:2016 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #61 running on server tcp://10.0.1.3:2022 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #13 running on server tcp://10.0.1.5:2002 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #51 running on server tcp://10.0.1.3:2018 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #31 running on server tcp://10.0.1.3:2010 and will be a client
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #35 running on server tcp://10.0.1.2:2012 and will be a client
+[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #34 running on server tcp://10.0.1.1:2012 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #59 running on server tcp://10.0.1.1:2022 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #39 running on server tcp://10.0.1.1:2014 and will be a client
+[0m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #5 running on server tcp://10.0.1.2:2000 and will be a client
+[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #44 running on server tcp://10.0.1.1:2016 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #53 running on server tcp://10.0.1.5:2018 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #48 running on server tcp://10.0.1.5:2016 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #38 running on server tcp://10.0.1.5:2012 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #57 running on server tcp://10.0.1.4:2020 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #21 running on server tcp://10.0.1.3:2006 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #9 running on server tcp://10.0.1.1:2002 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #54 running on server tcp://10.0.1.1:2020 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #6 running on server tcp://10.0.1.3:2000 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #14 running on server tcp://10.0.1.1:2004 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #49 running on server tcp://10.0.1.1:2018 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #62 running on server tcp://10.0.1.4:2022 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #22 running on server tcp://10.0.1.4:2006 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #46 running on server tcp://10.0.1.3:2016 and will be a client
+[0m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #55 running on server tcp://10.0.1.2:2020 and will be a client
+[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #4 running on server tcp://10.0.1.1:2000 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #58 running on server tcp://10.0.1.5:2020 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #40 running on server tcp://10.0.1.2:2014 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #7 running on server tcp://10.0.1.4:2000 and will be a client
+[0m[0;33m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #45 running on server tcp://10.0.1.2:2016 and will be a client
+[0m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #32 running on server tcp://10.0.1.4:2010 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #36 running on server tcp://10.0.1.3:2012 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #33 running on server tcp://10.0.1.5:2010 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #8 running on server tcp://10.0.1.5:2000 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #43 running on server tcp://10.0.1.5:2014 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #60 running on server tcp://10.0.1.2:2022 and will be a client
+[0m[0;33m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #56 running on server tcp://10.0.1.3:2020 and will be a client
+[0m1 : prifi.go:102 (main.(*SimulationService).Node) - Node #3 running on server tcp://10.1.0.3:2000 and will be a trustee
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #1 running on server tcp://10.1.0.1:2000 and will be a trustee
+1 : prifi.go:102 (main.(*SimulationService).Node) - Node #2 running on server tcp://10.1.0.2:2000 and will be a trustee
+[0;33m1 : prifi.go:147 (main.(*SimulationService).Node) - Initiating this node (index  2 ) as trustee
+[0m[0;33m1 : prifi.go:147 (main.(*SimulationService).Node) - Initiating this node (index  3 ) as trustee
+[0m[0;33m1 : prifi.go:147 (main.(*SimulationService).Node) - Initiating this node (index  1 ) as trustee
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.1:2006 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.5:2006 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.4:2008 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.1:2010 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.4:2014 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.5:2008 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.5:2004 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.3:2014 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.4:2002 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.3:2022 running in client mode
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 1 clients and 0 trustees), waiting...
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.3:2018 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.3:2002 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.1:2022 running in client mode
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 2 clients and 0 trustees), waiting...
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.3:2008 running in client mode
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 3 clients and 0 trustees), waiting...
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.3:2010 running in client mode
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 4 clients and 0 trustees), waiting...
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.2:2002 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.2:2006 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.2:2004 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.1:2004 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.4:2020 running in client mode
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 5 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 6 clients and 0 trustees), waiting...
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.4:2022 running in client mode
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 7 clients and 0 trustees), waiting...
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.5:2016 running in client mode
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 8 clients and 0 trustees), waiting...
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.1:2018 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.2:2012 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.2:2008 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.2:2010 running in client mode
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 9 clients and 0 trustees), waiting...
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.2:2018 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.5:2012 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.1:2002 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.2:2000 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.2:2020 running in client mode
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 10 clients and 0 trustees), waiting...
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.5:2020 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.1:2012 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.3:2004 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.4:2004 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.4:2006 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.3:2006 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.3:2016 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.1:2008 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.3:2000 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.4:2016 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.4:2012 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.1:2000 running in client mode
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 11 clients and 0 trustees), waiting...
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.4:2018 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.1:2014 running in client mode
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 12 clients and 0 trustees), waiting...
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.1:2016 running in client mode
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 13 clients and 0 trustees), waiting...
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.1:2020 running in client mode
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 14 clients and 0 trustees), waiting...
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.2:2014 running in client mode
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 15 clients and 0 trustees), waiting...
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.5:2010 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.5:2000 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.3:2012 running in client mode
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 16 clients and 0 trustees), waiting...
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.5:2022 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.3:2020 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.5:2018 running in client mode
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 17 clients and 0 trustees), waiting...
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.5:2002 running in client mode
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 18 clients and 0 trustees), waiting...
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.2:2016 running in client mode
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 19 clients and 0 trustees), waiting...
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.4:2010 running in client mode
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 20 clients and 0 trustees), waiting...
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.2:2022 running in client mode
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.4:2000 running in client mode
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 21 clients and 0 trustees), waiting...
+[0m[0;37;1mI : service.go:177 (services.(*ServiceState).StartClient) - Service tcp://10.0.1.5:2014 running in client mode
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 22 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 23 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 24 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 25 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 26 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 27 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 28 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 29 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 30 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 31 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 32 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 33 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 34 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 35 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 36 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 37 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 38 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 39 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 40 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 41 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 42 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 43 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 44 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 45 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 46 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 47 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 48 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 49 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 50 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 51 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 52 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 53 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 54 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 55 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 56 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 57 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 58 clients and 0 trustees), waiting...
+[0m[0;33m1 : churn.go:314 (services.(*churnHandler).tryStartProtocol) - Too few participants ( 59 clients and 0 trustees), waiting...
+[0m[0;37;1mI : service.go:246 (services.(*ServiceState).StartTrustee) - Service tcp://10.1.0.2:2000 running in trustee mode
+[0m[0;37;1mI : service.go:246 (services.(*ServiceState).StartTrustee) - Service tcp://10.1.0.1:2000 running in trustee mode
+[0m[0;37;1mI : service.go:246 (services.(*ServiceState).StartTrustee) - Service tcp://10.1.0.3:2000 running in trustee mode
+[0m[0;33m1 : churn.go:309 (services.(*churnHandler).tryStartProtocol) - Enough participants ( 59 clients and 1 trustees), but no handler to start.
+[0m[0;33m1 : churn.go:309 (services.(*churnHandler).tryStartProtocol) - Enough participants ( 59 clients and 2 trustees), but no handler to start.
+[0m[0;33m1 : churn.go:309 (services.(*churnHandler).tryStartProtocol) - Enough participants ( 59 clients and 3 trustees), but no handler to start.
+[0m[0;33m1 : runsimul.go:169 (platform.Simulate)                      - Starting new node PriFi
+[0m[0;37;1mI : prifi.go:185 (main.(*SimulationService).Run)             - Sleeping 15 seconds before starting the experiment...
+[0m[0;33m1 : churn.go:309 (services.(*churnHandler).tryStartProtocol) - Enough participants ( 60 clients and 3 trustees), but no handler to start.
+[0m[0;37;1mI : prifi.go:188 (main.(*SimulationService).Run)             - Starting experiment odo1AcayJLh9DkrfByM8L9kVJiiFR8ZU
+
+[0m[0;33m1 : prifi.go:146 (services.(*ServiceState).StartPriFiCommunicateProtocol) - Starting PriFi protocol
+[0m[0;37;1mI : prifi.go:153 (services.(*ServiceState).StartPriFiCommunicateProtocol) - Outputting CPU profile in /tmp/prifi-433348569
+[0m[0;33m1 : prifi.go:221 (main.(*SimulationService).Run)                          - Giving the experiment 3600 seconds to finish before aborting...
+[0m[0;33m1 : relay.go:170 (relay.(*PriFiLibRelayInstance).Received_ALL_ALL_PARAMETERS) - Relay has been initialized by message; StartNow is true
+[0m[0;33m1 : relay.go:177 (relay.(*PriFiLibRelayInstance).Received_ALL_ALL_PARAMETERS) - Relay setup done, and setup sent to the trustees.
+[0m[0;33m1 : timing.go:67 (utils.StopMeasureAndLogWithInfo)                            - [StopMeasureAndLog] measured time for resync-boot : 13 ms, info: 60
+[0m[0;33m1 : timing.go:67 (utils.StopMeasureAndLogWithInfo)                            - [StopMeasureAndLog] measured time for resync-shuffle-collect-client-pk : 884 ms, info: 60
+[0m[0;33m1 : timing.go:67 (utils.StopMeasureAndLogWithInfo)                            - [StopMeasureAndLog] measured time for resync-shuffle-trustee-1step : 869 ms, info: 60
+[0m[0;33m1 : timing.go:67 (utils.StopMeasureAndLogWithInfo)                            - [StopMeasureAndLog] measured time for resync-shuffle-trustee-2step : 239 ms, info: 60
+[0m[0;33m1 : timing.go:67 (utils.StopMeasureAndLogWithInfo)                            - [StopMeasureAndLog] measured time for resync-shuffle : 1993 ms, info: 60
+[0m[0;33m1 : timing.go:67 (utils.StopMeasureAndLogWithInfo)                            - [StopMeasureAndLog] measured time for resync : 2007 ms, info: 60
+[0m[0;33m1 : timeouts.go:35 (relay.(*PriFiLibRelayInstance).checkIfRoundHasEndedAfterTimeOut_Phase1) - WARNING: Timeout for round 1 , force closing. Already 1 consecutive missed rounds (killing when => 5 )
+[0m[0;33m1 : timeouts.go:40 (relay.(*PriFiLibRelayInstance).checkIfRoundHasEndedAfterTimeOut_Phase1) - missing clients [33] and trustees []
+[0m[0;33m1 : timeouts.go:51 (relay.(*PriFiLibRelayInstance).checkIfRoundHasEndedAfterTimeOut_Phase1) - Gonna Force close...
+[0m[0;33m1 : bufferableRoundManager.go:154 (relay.(*BufferableRoundManager).Dump)                    - ------------------------
+[0m[0;33m1 : bufferableRoundManager.go:155 (relay.(*BufferableRoundManager).Dump)                    - BufferableRoundManager with  60 clients 3 trustees, window = 5
+[0m[0;33m1 : bufferableRoundManager.go:157 (relay.(*BufferableRoundManager).Dump)                    - Current round: 1 open= true Has all ciphers ?  false
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 1 2020-02-26 03:07:27.206959168 -0800 PST m=+24.621233401
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 2 2020-02-26 03:07:27.207212344 -0800 PST m=+24.621486657
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 3 2020-02-26 03:07:27.207246202 -0800 PST m=+24.621520414
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 4 2020-02-26 03:07:27.207278197 -0800 PST m=+24.621552472
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 5 2020-02-26 03:07:27.20732345 -0800 PST m=+24.621597685
+[0m[0;33m1 : bufferableRoundManager.go:161 (relay.(*BufferableRoundManager).Dump)                    - ACK MAP Clients
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  0: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  1: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  2: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  3: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  4: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  5: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  6: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  7: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  8: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  9: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 10: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 11: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 12: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 13: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 14: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 15: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 16: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 17: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 18: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 19: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 20: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 21: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 22: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 23: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 24: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 25: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 26: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 27: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 28: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 29: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 30: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 31: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 32: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 33: false
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 34: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 35: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 36: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 37: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 38: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 39: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 40: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 41: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 42: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 43: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 44: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 45: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 46: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 47: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 48: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 49: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 50: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 51: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 52: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 53: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 54: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 55: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 56: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 57: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 58: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 59: true
+[0m[0;33m1 : bufferableRoundManager.go:163 (relay.(*BufferableRoundManager).Dump)                    - ACK MAP Trustees
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  0: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  1: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  2: true
+[0m[0;33m1 : bufferableRoundManager.go:169 (relay.(*BufferableRoundManager).Dump)                    - ------------------------
+[0m[0;33m1 : bufferableRoundManager.go:154 (relay.(*BufferableRoundManager).Dump)                    - ------------------------
+[0m[0;33m1 : bufferableRoundManager.go:155 (relay.(*BufferableRoundManager).Dump)                    - BufferableRoundManager with  60 clients 3 trustees, window = 5
+[0m[0;33m1 : bufferableRoundManager.go:157 (relay.(*BufferableRoundManager).Dump)                    - Current round: 2 open= true Has all ciphers ?  false
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 5 2020-02-26 03:07:27.20732345 -0800 PST m=+24.621597685
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 2 2020-02-26 03:07:27.207212344 -0800 PST m=+24.621486657
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 3 2020-02-26 03:07:27.207246202 -0800 PST m=+24.621520414
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 4 2020-02-26 03:07:27.207278197 -0800 PST m=+24.621552472
+[0m[0;33m1 : bufferableRoundManager.go:161 (relay.(*BufferableRoundManager).Dump)                    - ACK MAP Clients
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  0: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  1: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  2: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  3: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  4: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  5: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  6: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  7: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  8: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  9: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 10: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 11: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 12: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 13: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 14: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 15: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 16: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 17: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 18: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 19: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 20: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 21: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 22: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 23: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 24: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 25: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 26: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 27: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 28: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 29: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 30: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 31: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 32: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 33: false
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 34: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 35: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 36: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 37: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 38: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 39: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 40: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 41: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 42: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 43: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 44: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 45: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 46: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 47: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 48: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 49: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 50: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 51: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 52: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 53: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 54: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 55: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 56: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 57: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 58: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 59: true
+[0m[0;33m1 : bufferableRoundManager.go:163 (relay.(*BufferableRoundManager).Dump)                    - ACK MAP Trustees
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  0: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  1: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  2: true
+[0m[0;33m1 : bufferableRoundManager.go:169 (relay.(*BufferableRoundManager).Dump)                    - ------------------------
+[0m[0;33m1 : timeouts.go:35 (relay.(*PriFiLibRelayInstance).checkIfRoundHasEndedAfterTimeOut_Phase1) - WARNING: Timeout for round 4 , force closing. Already 2 consecutive missed rounds (killing when => 5 )
+[0m[0;33m1 : timeouts.go:40 (relay.(*PriFiLibRelayInstance).checkIfRoundHasEndedAfterTimeOut_Phase1) - missing clients [33] and trustees []
+[0m[0;33m1 : timeouts.go:51 (relay.(*PriFiLibRelayInstance).checkIfRoundHasEndedAfterTimeOut_Phase1) - Gonna Force close...
+[0m[0;33m1 : bufferableRoundManager.go:154 (relay.(*BufferableRoundManager).Dump)                    - ------------------------
+[0m[0;33m1 : bufferableRoundManager.go:155 (relay.(*BufferableRoundManager).Dump)                    - BufferableRoundManager with  60 clients 3 trustees, window = 5
+[0m[0;33m1 : bufferableRoundManager.go:157 (relay.(*BufferableRoundManager).Dump)                    - Current round: 2 open= true Has all ciphers ?  false
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 4 2020-02-26 03:07:27.207278197 -0800 PST m=+24.621552472
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 5 2020-02-26 03:07:27.20732345 -0800 PST m=+24.621597685
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 6 2020-02-26 03:07:47.220713901 -0800 PST m=+44.634988119
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 2 2020-02-26 03:07:27.207212344 -0800 PST m=+24.621486657
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 3 2020-02-26 03:07:27.207246202 -0800 PST m=+24.621520414
+[0m[0;33m1 : bufferableRoundManager.go:161 (relay.(*BufferableRoundManager).Dump)                    - ACK MAP Clients
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  0: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  1: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  2: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  3: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  4: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  5: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  6: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  7: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  8: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  9: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 10: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 11: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 12: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 13: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 14: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 15: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 16: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 17: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 18: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 19: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 20: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 21: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 22: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 23: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 24: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 25: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 26: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 27: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 28: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 29: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 30: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 31: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 32: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 33: false
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 34: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 35: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 36: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 37: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 38: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 39: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 40: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 41: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 42: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 43: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 44: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 45: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 46: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 47: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 48: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 49: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 50: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 51: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 52: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 53: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 54: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 55: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 56: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 57: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 58: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 59: true
+[0m[0;33m1 : bufferableRoundManager.go:163 (relay.(*BufferableRoundManager).Dump)                    - ACK MAP Trustees
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  0: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  1: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  2: true
+[0m[0;33m1 : bufferableRoundManager.go:169 (relay.(*BufferableRoundManager).Dump)                    - ------------------------
+[0m[0;33m1 : bufferableRoundManager.go:154 (relay.(*BufferableRoundManager).Dump)                    - ------------------------
+[0m[0;33m1 : bufferableRoundManager.go:155 (relay.(*BufferableRoundManager).Dump)                    - BufferableRoundManager with  60 clients 3 trustees, window = 5
+[0m[0;33m1 : bufferableRoundManager.go:157 (relay.(*BufferableRoundManager).Dump)                    - Current round: 3 open= true Has all ciphers ?  false
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 4 2020-02-26 03:07:27.207278197 -0800 PST m=+24.621552472
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 5 2020-02-26 03:07:27.20732345 -0800 PST m=+24.621597685
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 6 2020-02-26 03:07:47.220713901 -0800 PST m=+44.634988119
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 3 2020-02-26 03:07:27.207246202 -0800 PST m=+24.621520414
+[0m[0;33m1 : bufferableRoundManager.go:161 (relay.(*BufferableRoundManager).Dump)                    - ACK MAP Clients
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  0: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  1: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  2: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  3: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  4: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  5: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  6: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  7: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  8: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  9: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 10: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 11: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 12: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 13: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 14: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 15: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 16: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 17: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 18: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 19: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 20: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 21: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 22: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 23: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 24: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 25: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 26: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 27: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 28: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 29: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 30: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 31: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 32: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 33: false
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 34: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 35: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 36: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 37: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 38: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 39: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 40: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 41: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 42: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 43: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 44: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 45: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 46: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 47: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 48: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 49: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 50: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 51: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 52: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 53: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 54: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 55: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 56: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 57: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 58: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 59: true
+[0m[0;33m1 : bufferableRoundManager.go:163 (relay.(*BufferableRoundManager).Dump)                    - ACK MAP Trustees
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  0: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  1: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  2: true
+[0m[0;33m1 : bufferableRoundManager.go:169 (relay.(*BufferableRoundManager).Dump)                    - ------------------------
+[0m[0;33m1 : timeouts.go:35 (relay.(*PriFiLibRelayInstance).checkIfRoundHasEndedAfterTimeOut_Phase1) - WARNING: Timeout for round 3 , force closing. Already 3 consecutive missed rounds (killing when => 5 )
+[0m[0;33m1 : timeouts.go:40 (relay.(*PriFiLibRelayInstance).checkIfRoundHasEndedAfterTimeOut_Phase1) - missing clients [33] and trustees []
+[0m[0;33m1 : timeouts.go:51 (relay.(*PriFiLibRelayInstance).checkIfRoundHasEndedAfterTimeOut_Phase1) - Gonna Force close...
+[0m[0;33m1 : bufferableRoundManager.go:154 (relay.(*BufferableRoundManager).Dump)                    - ------------------------
+[0m[0;33m1 : bufferableRoundManager.go:155 (relay.(*BufferableRoundManager).Dump)                    - BufferableRoundManager with  60 clients 3 trustees, window = 5
+[0m[0;33m1 : bufferableRoundManager.go:157 (relay.(*BufferableRoundManager).Dump)                    - Current round: 3 open= true Has all ciphers ?  false
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 5 2020-02-26 03:07:27.20732345 -0800 PST m=+24.621597685
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 6 2020-02-26 03:07:47.220713901 -0800 PST m=+44.634988119
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 7 2020-02-26 03:07:47.229836085 -0800 PST m=+44.644110461
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 3 2020-02-26 03:07:27.207246202 -0800 PST m=+24.621520414
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 4 2020-02-26 03:07:27.207278197 -0800 PST m=+24.621552472
+[0m[0;33m1 : bufferableRoundManager.go:161 (relay.(*BufferableRoundManager).Dump)                    - ACK MAP Clients
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  0: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  1: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  2: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  3: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  4: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  5: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  6: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  7: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  8: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  9: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 10: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 11: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 12: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 13: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 14: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 15: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 16: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 17: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 18: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 19: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 20: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 21: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 22: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 23: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 24: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 25: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 26: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 27: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 28: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 29: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 30: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 31: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 32: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 33: false
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 34: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 35: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 36: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 37: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 38: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 39: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 40: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 41: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 42: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 43: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 44: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 45: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 46: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 47: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 48: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 49: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 50: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 51: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 52: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 53: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 54: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 55: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 56: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 57: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 58: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 59: true
+[0m[0;33m1 : bufferableRoundManager.go:163 (relay.(*BufferableRoundManager).Dump)                    - ACK MAP Trustees
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  0: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  1: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  2: true
+[0m[0;33m1 : bufferableRoundManager.go:169 (relay.(*BufferableRoundManager).Dump)                    - ------------------------
+[0m[0;33m1 : bufferableRoundManager.go:154 (relay.(*BufferableRoundManager).Dump)                    - ------------------------
+[0m[0;33m1 : bufferableRoundManager.go:155 (relay.(*BufferableRoundManager).Dump)                    - BufferableRoundManager with  60 clients 3 trustees, window = 5
+[0m[0;33m1 : bufferableRoundManager.go:157 (relay.(*BufferableRoundManager).Dump)                    - Current round: 4 open= true Has all ciphers ?  false
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 5 2020-02-26 03:07:27.20732345 -0800 PST m=+24.621597685
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 6 2020-02-26 03:07:47.220713901 -0800 PST m=+44.634988119
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 7 2020-02-26 03:07:47.229836085 -0800 PST m=+44.644110461
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 4 2020-02-26 03:07:27.207278197 -0800 PST m=+24.621552472
+[0m[0;33m1 : bufferableRoundManager.go:161 (relay.(*BufferableRoundManager).Dump)                    - ACK MAP Clients
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  0: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  1: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  2: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  3: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  4: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  5: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  6: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  7: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  8: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  9: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 10: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 11: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 12: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 13: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 14: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 15: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 16: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 17: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 18: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 19: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 20: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 21: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 22: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 23: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 24: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 25: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 26: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 27: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 28: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 29: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 30: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 31: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 32: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 33: false
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 34: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 35: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 36: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 37: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 38: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 39: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 40: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 41: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 42: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 43: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 44: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 45: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 46: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 47: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 48: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 49: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 50: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 51: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 52: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 53: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 54: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 55: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 56: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 57: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 58: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 59: true
+[0m[0;33m1 : bufferableRoundManager.go:163 (relay.(*BufferableRoundManager).Dump)                    - ACK MAP Trustees
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  0: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  1: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  2: true
+[0m[0;33m1 : bufferableRoundManager.go:169 (relay.(*BufferableRoundManager).Dump)                    - ------------------------
+[0m[0;33m1 : timeouts.go:35 (relay.(*PriFiLibRelayInstance).checkIfRoundHasEndedAfterTimeOut_Phase1) - WARNING: Timeout for round 5 , force closing. Already 4 consecutive missed rounds (killing when => 5 )
+[0m[0;33m1 : timeouts.go:40 (relay.(*PriFiLibRelayInstance).checkIfRoundHasEndedAfterTimeOut_Phase1) - missing clients [33] and trustees []
+[0m[0;33m1 : timeouts.go:51 (relay.(*PriFiLibRelayInstance).checkIfRoundHasEndedAfterTimeOut_Phase1) - Gonna Force close...
+[0m[0;33m1 : bufferableRoundManager.go:154 (relay.(*BufferableRoundManager).Dump)                    - ------------------------
+[0m[0;33m1 : bufferableRoundManager.go:155 (relay.(*BufferableRoundManager).Dump)                    - BufferableRoundManager with  60 clients 3 trustees, window = 5
+[0m[0;33m1 : bufferableRoundManager.go:157 (relay.(*BufferableRoundManager).Dump)                    - Current round: 4 open= true Has all ciphers ?  false
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 5 2020-02-26 03:07:27.20732345 -0800 PST m=+24.621597685
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 6 2020-02-26 03:07:47.220713901 -0800 PST m=+44.634988119
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 7 2020-02-26 03:07:47.229836085 -0800 PST m=+44.644110461
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 8 2020-02-26 03:07:47.23953383 -0800 PST m=+44.653808041
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 4 2020-02-26 03:07:27.207278197 -0800 PST m=+24.621552472
+[0m[0;33m1 : bufferableRoundManager.go:161 (relay.(*BufferableRoundManager).Dump)                    - ACK MAP Clients
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  0: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  1: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  2: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  3: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  4: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  5: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  6: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  7: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  8: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  9: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 10: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 11: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 12: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 13: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 14: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 15: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 16: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 17: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 18: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 19: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 20: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 21: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 22: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 23: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 24: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 25: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 26: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 27: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 28: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 29: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 30: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 31: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 32: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 33: false
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 34: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 35: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 36: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 37: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 38: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 39: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 40: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 41: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 42: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 43: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 44: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 45: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 46: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 47: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 48: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 49: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 50: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 51: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 52: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 53: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 54: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 55: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 56: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 57: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 58: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 59: true
+[0m[0;33m1 : bufferableRoundManager.go:163 (relay.(*BufferableRoundManager).Dump)                    - ACK MAP Trustees
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  0: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  1: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  2: true
+[0m[0;33m1 : bufferableRoundManager.go:169 (relay.(*BufferableRoundManager).Dump)                    - ------------------------
+[0m[0;33m1 : bufferableRoundManager.go:154 (relay.(*BufferableRoundManager).Dump)                    - ------------------------
+[0m[0;33m1 : bufferableRoundManager.go:155 (relay.(*BufferableRoundManager).Dump)                    - BufferableRoundManager with  60 clients 3 trustees, window = 5
+[0m[0;33m1 : bufferableRoundManager.go:157 (relay.(*BufferableRoundManager).Dump)                    - Current round: 5 open= true Has all ciphers ?  false
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 6 2020-02-26 03:07:47.220713901 -0800 PST m=+44.634988119
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 7 2020-02-26 03:07:47.229836085 -0800 PST m=+44.644110461
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 8 2020-02-26 03:07:47.23953383 -0800 PST m=+44.653808041
+[0m[0;33m1 : bufferableRoundManager.go:159 (relay.(*BufferableRoundManager).Dump)                    - Open rounds: 5 2020-02-26 03:07:27.20732345 -0800 PST m=+24.621597685
+[0m[0;33m1 : bufferableRoundManager.go:161 (relay.(*BufferableRoundManager).Dump)                    - ACK MAP Clients
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  0: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  1: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  2: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  3: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  4: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  5: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  6: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  7: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  8: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  9: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 10: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 11: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 12: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 13: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 14: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 15: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 16: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 17: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 18: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 19: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 20: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 21: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 22: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 23: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 24: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 25: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 26: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 27: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 28: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 29: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 30: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 31: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 32: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 33: false
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 34: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 35: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 36: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 37: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 38: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 39: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 40: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 41: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 42: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 43: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 44: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 45: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 46: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 47: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 48: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 49: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 50: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 51: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 52: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 53: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 54: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 55: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 56: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 57: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 58: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  - 59: true
+[0m[0;33m1 : bufferableRoundManager.go:163 (relay.(*BufferableRoundManager).Dump)                    - ACK MAP Trustees
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  0: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  1: true
+[0m[0;33m1 : bufferableRoundManager.go:145 (relay.sortedIntMapDump)                                  -  2: true
+[0m[0;33m1 : bufferableRoundManager.go:169 (relay.(*BufferableRoundManager).Dump)                    - ------------------------
+[0m[0;33m1 : trustee.go:132 (trustee.(*PriFiLibTrusteeInstance).Send_TRU_REL_DC_CIPHER) - Trustee 2 : rate changed from 1 to HALVED
+[0m[0;33m1 : trustee.go:132 (trustee.(*PriFiLibTrusteeInstance).Send_TRU_REL_DC_CIPHER) - Trustee 1 : rate changed from 1 to HALVED
+[0m[0;33m1 : trustee.go:132 (trustee.(*PriFiLibTrusteeInstance).Send_TRU_REL_DC_CIPHER) - Trustee 0 : rate changed from 1 to HALVED
+[0m[0;33m1 : timeouts.go:35 (relay.(*PriFiLibRelayInstance).checkIfRoundHasEndedAfterTimeOut_Phase1) - WARNING: Timeout for round 6 , force closing. Already 5 consecutive missed rounds (killing when => 5 )
+[0m[0;33m1 : timeouts.go:40 (relay.(*PriFiLibRelayInstance).checkIfRoundHasEndedAfterTimeOut_Phase1) - missing clients [33] and trustees []
+[0m[0;31m[0m[0;31m[0m[0;33m1 : prifi.go:188 (services.(*ServiceState).StopPriFiCommunicateProtocol)                    - Stopping PriFi protocol
+[0m[0;33m1 : timeouts.go:79 (relay.(*PriFiLibRelayInstance).timeoutRetransmitPk)                     - Timeout fired
+[0m
