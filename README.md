@@ -1,8 +1,8 @@
 # PriFi Experimental Data & Plots
 
-This repository contains all raw data (and their derived plots) about experiments and benchmarks of [PriFi](https://github.com/dedis/prifi).
+This repository contains all raw data (and their derived plots) about experiments and benchmarks of [PriFi](https://github.com/dedis/prifi). The goal is to have reproducible plots from raw data.
 
-## Structure of this repo.
+## Structure of this repo
 
 Please ignore the root folder! It only contains a bunch of scripts used by the sub-folders.
 
