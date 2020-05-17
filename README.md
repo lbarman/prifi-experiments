@@ -1,4 +1,4 @@
-# PriFi plots
+# PriFi Experimental Data & Plots
 
 This repository contains all raw data (and their derived plots) about experiments and benchmarks of [PriFi](https://github.com/dedis/prifi).
 
