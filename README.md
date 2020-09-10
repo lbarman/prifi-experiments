@@ -2,6 +2,14 @@
 
 This repository contains all raw data (and their derived plots) about experiments and benchmarks of [PriFi](https://github.com/dedis/prifi). The goal is to have reproducible plots from raw data.
 
+## Prerequisites
+
+- Python2
+- NodeJS + npm
+- underscore JS (just get all dependencies via `npm install`)
+- Gnuplot
+- epstopdf (typically comes with the LaTeX full suite)
+
 ## Structure of this repo
 
 Please ignore the root folder! It only contains a bunch of scripts used by the sub-folders.
